@@ -117,6 +117,9 @@ a {
     padding: 0 50px !important;
     z-index: 100;
 }
+.navbar-nav {
+    margin-top: 15px;
+}
 #nav {
     background: rgba(255, 255, 255, 0.85);
     margin: 0 20px 0 0;
