@@ -1,15 +1,31 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Redeban Multicolor</title>
+    <meta name="description" content="Todas las publicaciones y reglamentos de ">
+    <meta name="keywords" content="RBM, Redeban, Red Multicolor, redeban multicolor, tarjeta de credito, como recibo tarjeta, noticias redeban, opciones de pago, ventas con tarjeta">
+    <title>Redeban | Noticias </title>
     <!--WC3-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Bootstrap CSS -->    
     <link rel="stylesheet" href="css/bootstrap.css"> 
     <link rel="stylesheet" href="css/style.css">   
+    <link href="recursos/favicon.ico" rel="shortcut icon" type="image/x-icon">
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166968761-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-166968761-1');
+    </script>
+    <!--og tag-->    
+    <meta property="og:site_name" content="Redeban">    
+    <meta property="og:description" content="Adquiere ya tu datafono y no pierdas mas ventas. Soluciones de e-commerce para vender con o sin página web.">    
+       
        
   </head>
   <body>
@@ -19,16 +35,16 @@
         <!--Primera seccion-->
         <div class="bannerConsumidor" style="background:url('consumidor/imagen-1.jpg');background-position: center right; background-size: cover;">
             <div class="encabezado col-md-offset-1 seccionTitulo">
-                <img class="" src="consumidor/icono.png">
+                <img class="" src="consumidor/icono.png" alt="consumidor">
                 <div class="azul"> Consumidor financiero </div>
             </div> 
             <div class="row wrapper animated fadeInLeft">
              <!-- <div class="subseccion col-xs-12 col-sm-9 col-md-offset-1"> -->
                 <div class="co-lg-11 offset-lg-1 col-xs-12 col-sm-9 col-md-offset-1"> 
-                    <img class="hidden-xs hidden-sm col-sm-offset-1" src="consumidor/imagenDescripcion.png" alt="" style="margin-left: 50px">
-                    <h3 class="azul" style="margin:0;"> <br>Publicaciones Reglamentarias <br>según decreto 2230 <span data-id="pdfDecreto" class="glyphicon glyphicon-collapse-up botonSpan"> </span></h3> 
+                    <img class="hidden-xs hidden-sm col-sm-offset-1" src="consumidor/imagenDescripcion.png" alt="consumidor " style="margin-left: 50px">
+                    <h3 class="azul" style="margin:0;"> <br>Publicaciones Reglamentarias <br>según decreto 2230 <a data-toggle="collapse" href="#pdfDecreto"><span data-id="pdfDecreto" class="glyphicon glyphicon-collapse-up botonSpan"> </span></a></h3> 
                     <br>
-                    <ul id="pdfDecreto" class="lista" style="padding-left:5px;">
+                    <ul id="pdfDecreto" class="lista collapse" style="padding-left:5px;">
                         <span class="gris"> Abril a Junio de 2019 </span>
                         <li>
                             <a href="pdf/Actividades+Consolidadas+MCC.pdf" target="_blank"> 
@@ -58,9 +74,16 @@
             <!--<div class="subseccion seccionFinanciera " style="background-image: url(/wps/wcm/connect/86a5c30d-56c3-4696-921b-86c63595aea1/imagen-2.jpg?MOD=AJPERES&amp;CACHEID=86a5c30d-56c3-4696-921b-86c63595aea1);background-position: center right;">-->
                 <div class="container componentesPDF">  
                 
-                    <h2 class="azul"><span class="glyphicon glyphicon-ok azul"></span> &nbsp; Resoluciones <span data-id="pdfResoluciones" class="glyphicon botonSpan glyphicon-collapse-up"> </span></h2>
-            <ul id="pdfResoluciones" class="lista" style="display: block;">
-            <br> <li><a href="pdf/Resolucion+Remi.pdf" target="_blank"> <span class="ico ico-pdf"></span>Ministerio de Comercio, Industria y Turismo Resolución 40478 y 53990</a></li></ul>
+                    <h2 class="azul">
+                        <span class="glyphicon glyphicon-ok azul"></span> &nbsp; Resoluciones 
+                        <a data-toggle="collapse" href="#pdfResoluciones"><span data-id="pdfResoluciones" class="glyphicon botonSpan glyphicon-collapse-up"> </span></a>
+                    </h2>
+            <ul id="pdfResoluciones" class="lista collapse">
+                <li>
+                    <a href="pdf/Resolucion+Remi.pdf" target="_blank"> 
+                    <span class="ico ico-pdf"></span>Ministerio de Comercio, Industria y Turismo Resolución 40478 y 53990</a>
+                </li>
+            </ul>
                                     
             </div>
         </div>
@@ -69,8 +92,8 @@
         <!--Segunda sección-->
         <div class="parte-2" style="background-image: url(consumidor/imagen-div-5.jpg);background-size: cover">
             <div class="row">
-                <div class="col-lg-1 offset-lg-1">
-                    <img class="img-responsive img-descripcion" src="consumidor/icono-informacion-financiera.png">
+                <div class="col-lg-2 offset-lg-1">
+                    <img class="img-responsive img-descripcion" src="consumidor/icono-informacion-financiera.png" alt="información financiera">
                 </div>
             </div>
             <div class="row" id="informes">
@@ -110,7 +133,7 @@
         <!--Contáctenos-->
         <div id="contactenos" class="row" style="background-image: url(recursos/fondo-contactenos.jpg); background-position: bottom left; background-repeat: no-repeat; background-size: cover; text-align: center;">            
             <div class="col-md-12 col-lg-12 col-sm-offset-3">
-                <h2 class="azul" style="padding: 10px 0px 10px 30px;">  <img class="hidden-xs" src="recursos/ico-ctc.png"> Contáctenos  <span data-id="infoCTC" class="glyphicon botonSpan glyphicon-collapse-up"> </span> </h2>                
+                <h2 class="azul" style="padding: 10px 0px 10px 30px;">  <img class="hidden-xs" src="recursos/ico-ctc.png" alt="ctc"> Contáctenos  <span data-id="infoCTC" class="glyphicon botonSpan glyphicon-collapse-up"> </span> </h2>                
             </div>
             <div id="infoCTC" class="cuerpoCTC" style="display: block;">			 
                 <div class="container">

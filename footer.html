@@ -1,4 +1,45 @@
     <!--Footer-->
+    <script type="text/javascript">
+
+
+        function openChat(){
+            document.getElementById("chatDivFrameContainer").style.display="block";
+            document.getElementById("chatDiv").className="chat-window-expanded";
+            document.getElementById("chatDivBtn").className="roundBordersTop";
+            document.getElementById("closeIcon").style.display="block";
+        }
+        function closeChat(){
+            document.getElementById("chatDivFrameContainer").style.display="none";
+            document.getElementById("chatDiv").className="chat-window";
+            document.getElementById("chatDivBtn").className="roundBorders";
+            document.getElementById("closeIcon").style.display="none";
+        }
+        
+        function toggleChat(){
+            if(document.getElementById("chatDivFrameContainer").style.display=="none"){
+                 openChat();
+            }else{
+                 closeChat();
+            }
+        }
+    </script>
+    <div id="chatDiv" style="" class="chat-window">
+		<div id="chatDivBtn" class="roundBorders" onclick="toggleChat()">
+			<div name="chat-button">
+				<button tabindex="-1" focusable="false">
+					<img src="recursos/icono-chat-redeban.png" width="37px">
+					<span>Chatea con nosotros</span>
+				</button>
+				<button id="closeIcon" class="closebtn" style="display: none;" tabindex="-1" focusable="false">
+					<img src="recursos/close-chat-redeban.png" width="37px">
+				</button>
+				
+			</div>
+		</div>
+		<div id="chatDivFrameContainer" style="display: none;" class="embed-container">
+			<iframe id="aaa" src="https://www.rbmcolombia.com/WebChatMultichannel/default.aspx" width="380px" height="450px"></iframe>
+		</div>
+	</div>
     <div class="wrapper-Footer">  
         <div class="wrapper">
             <div class="row enlaces-footer hidden-xs">
