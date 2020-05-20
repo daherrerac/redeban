@@ -1,5 +1,8 @@
 
 
+$(window).on('load', function() {
+    $(".loader").fadeOut(3000);
+});
 $(document).ready(function () {
     $(function() {
         $("#navigation").load("nav.html");
