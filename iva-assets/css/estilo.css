@@ -1,0 +1,94 @@
+.iva.nav-item{
+    padding: 0 20px;
+}
+.iva a{
+    color: #101a7e;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.banner{
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.banner img{
+    display: block;
+    width: 100%;
+}
+.que-es{
+    background: url(../img/rbm-bg-seccion-2.png);
+    background-position: center center;
+    background-size: cover;
+    min-height: 50vh;
+    margin-top: -160px;
+}
+.que-es .titulo,.como .titulo, .preguntas .titulo{
+    font-size: 3em;
+    text-align: center;
+    width: 100%;
+    padding: 80px 0;
+    color:#da7f1e;
+    font-weight: bold;
+}
+.que-es .container{
+    padding-top: 150px;
+}
+.que-es p{
+    color: #101a7e;
+    font-size: 1.2em;
+}
+.que-es p span{
+    color:#da7f1e;
+}
+.como .subtitulo{
+    text-align: center;
+    color: #727176;
+    font-size: 1.4em;
+}
+.como .subtitulo a{
+    color:#da7f1e;
+}
+.datafono{
+    margin-top: 30px;
+}
+.como .datafono{
+    text-align: center;
+    color:#da7f1e;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.como .datafono img{
+    display: block;
+    margin:0 auto;
+}
+.como .datafono img.foto{
+    display: block;
+    margin:0 auto;
+    height: 180px;
+    width: auto;
+}
+.como .decreto{
+    font-size: 2em;
+    color: #101a7e;
+    padding-top: 30px;
+}
+.como .decreto span{
+    color: #da7f1e;
+}
+.como .decreto img{
+    display: block;
+    margin:0 auto;
+}
+.preguntas img{
+    display: block;
+    margin: 0 auto;
+}
+footer{
+    padding: 60px 0;
+    background: #727176;
+}
+footer img{
+    display: block;
+    margin: 0 auto;
+}

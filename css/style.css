@@ -142,15 +142,18 @@ body {
     margin-bottom: 10px;
 }
 p {
-    margin: 0 0 10px;    
+    margin: 0 0 10px;   
+    font-family:'plantilla1'; 
 }
 a {
     color: #337ab7;
     text-decoration: none;
+    font-family:'plantilla1';
 }
 /* Barra de navegación */
 #navigation{background: #fff;}
 .navbar {
+    font-family:'plantilla1';
     position: relative;
     min-height: 50px;       
     border-bottom: 1px solid #e7e7e7;
@@ -2098,4 +2101,107 @@ hr {
         max-height: 50vh;
     }
     
+}
+
+
+/*Header Datamas*/
+header.datamas{    
+    background: rgba(255,255,255,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(235,237,243,1) 0%, rgba(222,227,236,1) 70%, rgba(154,169,197,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(0%, rgba(255,255,255,1)), color-stop(0%, rgba(255,255,255,1)), color-stop(0%, rgba(235,237,243,1)), color-stop(70%, rgba(222,227,236,1)), color-stop(100%, rgba(154,169,197,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(235,237,243,1) 0%, rgba(222,227,236,1) 70%, rgba(154,169,197,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(235,237,243,1) 0%, rgba(222,227,236,1) 70%, rgba(154,169,197,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(235,237,243,1) 0%, rgba(222,227,236,1) 70%, rgba(154,169,197,1) 100%) ;
+    background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(235,237,243,1) 0%, rgba(222,227,236,1) 70%, rgba(154,169,197,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#9aa9c5', GradientType=1 );
+    height: 229px;
+    width: auto;
+}
+.datamas .col-4{
+    position: relative;
+    background: url('../img/datamas/shape.png') no-repeat left top;
+    background-size: 100% 230px;
+}
+.vigilado{
+    position: absolute;
+    top:20%;    
+}
+.vigilado img{
+    width: 10px;
+}
+.logo {
+	width: 60%;
+	margin: 25px 0 0 10%;
+}
+.logo img{
+    margin: 20px;
+    display: block;
+}
+.datamas .col-4 p{
+    font-family:'plantilla1';  
+    color:#fff;
+    width: 40%;
+    text-align: center;
+    margin:0 20%;
+    line-height: 1.6em !important; 
+    font-weight: 300;   
+}
+.datamas .col-4 p strong{
+    font-weight: bold;
+}
+.datamas .col-4 p span{
+    font-size: 1.5em !important;
+    font-style: italic;
+    color:#7c8fb5;
+}
+.datamas ul{
+    list-style: none;
+    display: inline-flex;  
+    margin: 0 auto;  
+}
+.datamas li{
+    margin: 20px 10px;
+    background-color: #fff;
+    border-radius: 5px;    
+    width:150px;
+}
+.datamas li img{
+    width: 80px;
+    margin: 10px auto;
+    display: block;
+    padding: 5px;
+}
+.datamas li p{
+    text-align: center;
+    font-weight: normal;
+    color:#a9a8a8;
+    font-size: 0.8em;
+    margin-top: 10px;
+    height: 80px;
+}
+.datamas li p strong{
+    font-weight:bolder;
+    color:#888888;
+}
+@media(max-width:1024px){
+    header.datamas{
+        width: 150%;
+    }
+    
+}
+@media(max-width:768px){
+    
+    .datamas .col-4 p {
+        font-family: 'plantilla1';
+        color: #fff;
+        width: 65%;
+        text-align: center;
+        margin: 0 10%;
+        line-height: 1.6em !important;
+        font-weight: 300;
+    }
+    .logo {
+        width: 80%;
+        margin:0 5%;
+    }
 }
