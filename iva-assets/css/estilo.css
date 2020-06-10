@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 .iva.nav-item{
     padding: 0 20px;
 }
@@ -84,11 +87,140 @@
     display: block;
     margin: 0 auto;
 }
+/*Seccion faq*/
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+	color: #495057;
+	background-color: transparent;
+	border-color: transparent;
+}
+.nav-tabs .nav-item {	
+	margin: 0 auto;
+}
+.nav-tabs {
+	border-bottom: none;
+	margin: 0 auto;
+	text-align: center;
+}
+.nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+	border-color: transparent;
+}
+
+/*Acordeon faqs*/
+
+
+.content {
+    border-radius: 0px;
+  }
+  .panel-group {
+    margin-bottom: 0;
+  }
+  .panel-group .panel {
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .panel-group .panel .panel-heading {
+    padding: 0;
+  }
+  .panel-group .panel .panel-heading h4 a {
+    background: #d3dcec;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 5px 5px 20px;
+    text-decoration: none;
+    transition: 0.15s all ease-in-out;
+    margin: 2px;
+    border-radius: 10px;
+  }
+  .panel-group .panel .panel-heading h4 a:hover { 
+    background: #d9edf7;
+    transition: 0.15s all ease-in-out;
+    border-radius: 10px;	
+  }
+  .panel-group .panel .panel-heading h4 a:not(.collapsed) i:before {
+    content: "";
+  }
+  .panel-group .panel .panel-heading h4 a i {
+    color: #999;
+  }
+  .panel-group .panel .panel-body {
+    padding-top: 0;
+  }
+  .panel-group .panel .panel-heading + .panel-collapse > .list-group,
+  .panel-group .panel .panel-heading + .panel-collapse > .panel-body {
+    border-top: none;
+  }
+  .panel-group .panel + .panel {
+    border-top: none;
+    margin-top: 0;
+  }
+  
+  .panel-default {
+      border-color: #fff;
+  }
+  .panel-heading{
+      border-radius: 30px;
+  }
+  
+  .panel-default > .panel-heading {
+      color: #333;
+      background-color: #fff;
+      border-color: #fff;
+  }
+  
+  .faq{
+      padding: 10px;
+      margin: 20px;
+  }
+  svg {
+      float: right;
+  }
+  
+.iconos{
+    padding: 20px 0;
+}
+.iconos img{
+    display: block;
+    margin: 0 auto;
+}
+
 footer{
+    position: relative;
     padding: 60px 0;
-    background: #727176;
+    background: #dbdbdb;
 }
 footer img{
     display: block;
     margin: 0 auto;
+    max-width: 300px;
+}
+
+footer span{
+    display: block;
+    text-align: center;
+    font-size: 0.8em;
+    color: #5f5f5f;
+    margin-left: 30px;
+}
+@media(max-width:768px){    
+    .navbar-brand img {        
+        margin-left: 15px;
+    }
+    .navbar-expand-md > .container-fluid {
+        padding-right: 0px;
+        padding-left: 0;
+    }
+    .iva a {
+        color: #fff;
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+}
+@media(max-width:510px){
+    .nav-tabs {
+        display: block;
+    }
+    .como .decreto {
+        text-align: center;
+    }
 }

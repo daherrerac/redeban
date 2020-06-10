@@ -161,6 +161,7 @@ a {
     padding: 0 50px !important;
     z-index: 100;
 }
+
 .navbar-nav {
     margin-top: 15px;
 }
@@ -1834,6 +1835,7 @@ hr {
 }
 
 @media (max-height: 768px){
+    
     .descpci, .logopci span {
         font-size: 25px;
     }
@@ -2039,14 +2041,12 @@ hr {
 #chatDivBtn div button img {
     background: #101a7e;
     display: inline-block;
-    border-right: 1px solid black;
-    float: left;
+    border-right: 1px solid black;    
     padding: 5px;
 }
 #chatDivBtn div button.closebtn {
     background: transparent;
-    display: inline-block;
-    float: right;
+    display: inline-block;    
     padding: 0px;
 }
 .embed-container {
