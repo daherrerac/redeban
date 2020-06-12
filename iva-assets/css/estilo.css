@@ -1,5 +1,27 @@
+@font-face {
+    font-family: 'Helvetica-Bold';
+    src: url('../fonts/Helvetica-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/Helvetica-Bold.otf')  format('opentype'),
+           url('../fonts/Helvetica-Bold.woff') format('woff'), url('../fonts/Helvetica-Bold.ttf')  format('truetype'), url('../fonts/Helvetica-Bold.svg#Helvetica-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+ }
+
+
+@font-face {
+    font-family: 'HelveticaNeueLTStd-Bd';
+    src: url('../fonts/HelveticaNeueLTStd-Bd.eot?#iefix') format('embedded-opentype'),  url('../fonts/HelveticaNeueLTStd-Bd.otf')  format('opentype'),
+           url('../fonts/HelveticaNeueLTStd-Bd.woff') format('woff'), url('../fonts/HelveticaNeueLTStd-Bd.ttf')  format('truetype'), url('../fonts/HelveticaNeueLTStd-Bd.svg#HelveticaNeueLTStd-Bd') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  
+
 html{
     scroll-behavior: smooth;
+}
+section{
+    font-family: 'HelveticaNeueLTStd-Bd';
 }
 .iva.nav-item{
     padding: 0 20px;
@@ -26,11 +48,12 @@ html{
     margin-top: -160px;
 }
 .que-es .titulo,.como .titulo, .preguntas .titulo{
-    font-size: 3em;
+    font-family: 'Helvetica-Bold';
+    font-size: 3.2em;
     text-align: center;
     width: 100%;
-    padding: 80px 0;
-    color:#da7f1e;
+    padding: 60px 0 50px 0;
+    color:#f58000;
     font-weight: bold;
 }
 .que-es .container{
@@ -39,24 +62,29 @@ html{
 .que-es p{
     color: #101a7e;
     font-size: 1.2em;
+    display: inline-block;
+    margin: 10% 0;
+
 }
 .que-es p span{
-    color:#da7f1e;
+    color:#f58000;
+    font-weight: bold;
 }
 .como .subtitulo{
+    font-family: 'plantilla1';
     text-align: center;
     color: #727176;
-    font-size: 1.4em;
+    font-size: 1.2em !important;
 }
 .como .subtitulo a{
-    color:#da7f1e;
+    color:#f58000;
 }
 .datafono{
     margin-top: 30px;
 }
 .como .datafono{
     text-align: center;
-    color:#da7f1e;
+    color:#f58000;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.3em;
@@ -71,13 +99,20 @@ html{
     height: 180px;
     width: auto;
 }
+.info-decreto{
+    margin:100px auto ;
+}
 .como .decreto{
     font-size: 2em;
     color: #101a7e;
     padding-top: 30px;
+    text-align: center;
+}
+.como .decreto p{
+    margin: 10% 0 2% 0;
 }
 .como .decreto span{
-    color: #da7f1e;
+    color: #f58000;
 }
 .como .decreto img{
     display: block;
@@ -88,8 +123,11 @@ html{
     margin: 0 auto;
 }
 /*Seccion faq*/
+.preguntas .nav-item a{
+    color:transparent;
+}
 .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-	color: #495057;
+	color: transparent;
 	background-color: transparent;
 	border-color: transparent;
 }
@@ -104,7 +142,57 @@ html{
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
 	border-color: transparent;
 }
-
+#myTab{
+    margin: 50px auto;
+}
+#myTabContent{
+    display: none;
+}
+.inc-class{
+    width: 150px;
+    background: url(../img/Btn-INC_inactivo.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.iva-class{
+    width: 150px;
+    background: url(../img/Btn-IVA_inactivo.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.generales-class{
+    width: 180px;
+    background: url(../img/Btn-GENERALES_inactivo.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.inc-class.active{
+    width: 150px;
+    background: url(../img/Btn-INC_activo.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.iva-class.active{
+    width: 150px;
+    background: url(../img/Btn-IVA_activo.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.generales-class.active{
+    width: 180px;
+    background: url(../img/Btn-GENERALES_activo.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.faq .panel-body p{
+    padding: 5px 10px;
+}
 /*Acordeon faqs*/
 
 
@@ -124,7 +212,7 @@ html{
   .panel-group .panel .panel-heading h4 a {
     background: #d3dcec;
     display: block;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: bold;
     padding: 5px 5px 5px 20px;
     text-decoration: none;
@@ -182,6 +270,7 @@ html{
 .iconos img{
     display: block;
     margin: 0 auto;
+    width: 150px;
 }
 
 footer{
@@ -197,10 +286,14 @@ footer img{
 
 footer span{
     display: block;
-    text-align: center;
+    text-align: left;
     font-size: 0.8em;
-    color: #5f5f5f;
-    margin-left: 30px;
+    color: #727272;
+    margin-top: 20px;
+    margin-left: 7%;
+}
+footer .vigilado{
+    left: 5%;
 }
 @media(max-width:768px){    
     .navbar-brand img {        
@@ -223,4 +316,18 @@ footer span{
     .como .decreto {
         text-align: center;
     }
+    .panel-group .panel .panel-heading h4 a {        
+        padding: 10px 15px 24px 10px;   
+        font-size: 13px;     
+    }
+    footer span{       
+        margin-left: 10%;
+    }
+    #myTab li{
+        margin: 15px auto ;
+    }
+    .como .subtitulo{
+        padding: 0 15px;
+    }
 }
+

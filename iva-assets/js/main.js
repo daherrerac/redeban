@@ -1,0 +1,20 @@
+$(document).ready(function(){
+    $("#faq-inc").click(function(){      			
+        $("#faq-inc").addClass("active");
+        $("#faq-iva").removeClass("active");        
+        $("#faq-generales").removeClass("active");   
+        $("#myTabContent").show();     
+    });
+    $("#faq-iva").click(function(){      			
+        $("#faq-iva").addClass("active");
+        $("#faq-inc").removeClass("active");   
+        $("#faq-generales").removeClass("active");             
+        $("#myTabContent").show();   
+    });    
+    $("#faq-generales").click(function(){      			
+        $("#faq-generales").addClass("active");
+        $("#faq-iva").removeClass("active");        
+        $("#faq-inc").removeClass("active");        
+        $("#myTabContent").show();   
+    });
+});
