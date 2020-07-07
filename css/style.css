@@ -475,14 +475,20 @@ width: 100%;
     font-size: 1.3em;
     text-decoration: none;
 }
+.btn-pagos{
+    margin-top:30%;
+}
+.btn-pagos img{
+    width: 100%;
+}
 /* Sección noticias */
 .azul {
     color: rgb(23,77,150);
 }
 .noticias-link{
-    background-color:#337ab7;
-    color:#fff;
-    padding: 10px;
+    color:#337ab7;
+    /*color:#fff;*/
+    padding: 10px 0;
     border-radius: 25px;
     text-decoration-line: none;
 }
@@ -2030,6 +2036,16 @@ hr {
     }
     .slider-solucionesProcesamiento {       
         margin-left: 0; 
+    }
+    .btn-pagos{
+        margin-top:85%;
+    }
+    .btn-pagos img{
+        width: 85%;
+        margin: 0 auto;
+    }
+    ol.carousel-indicators{
+        margin-bottom: 0;
     }
 }
 @media (max-width:450px){

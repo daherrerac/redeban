@@ -343,17 +343,17 @@
 
     </div>
 
-     <!--Contáctenos-->
-     <div id="contactenos" class="row" style="background-image: url(recursos/fondo-contactenos.jpg); background-position: bottom left; background-repeat: no-repeat; background-size: cover; text-align: center;">            
+    <!--Contáctenos-->
+    <div id="contactenos" class="row" style="background-image: url(recursos/fondo-contactenos.jpg); background-position: bottom left; background-repeat: no-repeat; background-size: cover; text-align: center;">            
         <div class="col-md-12 col-lg-12 col-sm-offset-3">
             <h2 class="azul" style="padding: 10px 0px 10px 30px;">  <img class="hidden-xs" src="recursos/ico-ctc.png" alt="icono ctc"> Contáctenos  <span data-id="infoCTC" class="glyphicon botonSpan glyphicon-collapse-up"> </span> </h2>                
         </div>
         <div id="infoCTC" class="cuerpoCTC" style="display: block;">			 
             <div class="container">
                 <div class="row">                                                                                          
-                    <form style="width:100%">
+                    <form  style="width:100%" method="POST" action="/wps/portal/Contactenos">
                         <div class="container-contactenos">
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label for="RBMcontactenosPortletFormTipoSolicitud" class="sr-only">Tipo de solicitud:</label>
                                 <div class="row">
                                     <div class="col-lg-5 col-md-5 col-sm-12" >
@@ -366,7 +366,7 @@
                                         </select>
                                     </div>
                                     </div>
-                            </div>
+                            </div> -->
                             <div id="afiliarse"> 
                                 <!-- <h2 class="azul" style="padding: 10px 0px 10px 20px;"> AFILIARSE </h2> -->
                                 <div class="row">
@@ -410,91 +410,7 @@
                                 
                                 
                             </div>
-                            <div id="referir" style="display:none"> 
-                                <!-- <h2 class="azul" style="padding: 10px 0px 10px 20px;"> REFERIR </h2> --> 
-                                
-            
-                                <div class="form-group col-xs-12 col-md-6">
-                                        
-                                        <select name="RBMcontactenosPortletFormBancoRefe" class="form-control campoctc">
-                                                <option value="null"> -- Seleccione -- </option>
-                                                <option value="Bancolombia"> Bancolombia </option>
-                                                <option value="Davivienda"> Davivienda </option>
-                                                <option value="Bco Bogotá"> Bco Bogotá </option>
-                                                <option value="BBVA"> BBVA </option>
-                                                <option value="Bco Caja Social"> Bco Caja Social </option>
-                                                <option value="Bco Occidente"> Bco Occidente </option>
-                                                <option value="Colpatria"> Colpatria </option>
-                                                <option value="Bco Itau"> Bco Itau </option>
-                                                <option value="Av Villas"> AV Villas </option> 
-                                                <option value=""> Banagrario </option>
-                                                <option value="Bco Pichincha"> Bco Pichincha </option>
-                                                <option value="Citibank"> Citibank </option>
-                                                <option value="GNB"> GNB </option>
-                                                <option value="Bancoomeva"> Bancoomeva </option>
-                                                <option value="Finamerica"> Finamerica </option>
-                                                <option value="Giros y Finanzas"> Giros y Finanzas </option>
-                                                <option value="Bancamia"> Bancamia </option>
-                                                <option value="Coltefinanciera"> Coltefinanciera </option>
-                                                <option value="Procredit"> Procredit </option>
-                                                <option value="Serfinanza"> Serfinanza </option>
-                                                <option value="Falabella"> Falabella </option>
-                                                <option value="Macrofinanciera"> Macrofinanciera </option>								
-                                        </select>
-                                        
-                                </div>
-
-                                <div class="form-group col-xs-12 col-md-6">
-                                        <label for="RBMcontactenosPortletFormOficinaRefe" class="sr-only"> REFERIDO</label>
-                                        <input class="form-control campoctc" name="RBMcontactenosPortletFormOficinaRefe" type="text" placeholder="Nombre de la oficina">
-                                </div>
-                                
-                                <div class="form-group col-xs-12 col-md-6">
-                                        <label for="RBMcontactenosPortletFormAsesorNombreRefe" class="sr-only"> REFERIDO</label>
-                                        <input class="form-control campoctc" name="RBMcontactenosPortletFormAsesorNombreRefe" type="text" placeholder="Nombre del asesor">
-                                </div>
-
-                                <div class="form-group col-xs-12 col-md-6">
-                                        <label for="RBMcontactenosPortletFormCCAsesorRefe" class="sr-only"> REFERIDO</label>
-                                        <input class="form-control campoctc" name="RBMcontactenosPortletFormCCAsesorRefe" type="text" placeholder="Cedula de asesor">
-                                </div>
-                                
-                                
-                                <div class="form-group col-xs-12 col-md-6">
-                                        <label for="RBMcontactenosPortletFormComercioRefe" class="sr-only"> REFERIDO</label>
-                                        <input class="form-control campoctc" name="RBMcontactenosPortletFormComercioRefe" type="text" placeholder="Nombre del comercio">
-                                </div>
-
-                                <div class="form-group col-xs-12 col-md-6">
-                                        <label for="RBMcontactenosPortletFormACTEconomiaRefe" class="sr-only"> REFERIDO</label>
-                                        <input class="form-control campoctc" name="RBMcontactenosPortletFormACTEconomiaRefe" type="text" placeholder="Actividad económica">
-                                </div>
-                                
-                                <div class="form-group col-xs-12 col-md-6">
-                                        <label for="RBMcontactenosPortletFormNitRefe" class="sr-only"> REFERIDO</label>
-                                        <input class="form-control campoctc" name="RBMcontactenosPortletFormNitRefe" type="text" placeholder="NIT">
-                                </div>
-                                
-                                <div class="form-group col-xs-12 col-md-6">
-                                        <label for="RBMcontactenosPortletFormCiudadRefe" class="sr-only"> REFERIDO</label>
-                                        <input class="form-control campoctc" name="RBMcontactenosPortletFormCiudadRefe" type="text" placeholder="Ciudad">
-                                </div>
-
-                                <div class="form-group col-xs-12 col-md-6">
-                                        <label for="RBMcontactenosPortletFormContactoRefe" class="sr-only"> REFERIDO</label>
-                                        <input class="form-control campoctc" name="RBMcontactenosPortletFormContactoRefe" type="text" placeholder="Nombre de la Persona de Contacto">
-                                </div>
-                                
-                                <div class="form-group col-xs-12 col-md-6">
-                                        <label for="RBMcontactenosPortletFormTelefonoContacto" class="sr-only"> REFERIDO</label>
-                                        <input class="form-control campoctc" name="RBMcontactenosPortletFormTelefonoContacto" type="text" placeholder="Teléfono/Celular de contacto">
-                                </div>	
-                                
-                                <div class="form-group col-xs-12 col-md-6">
-                                        <label for="RBMcontactenosPortletForm_Correo_Contacto" class="sr-only"> REFERIDO</label>
-                                        <input class="form-control campoctc" name="RBMcontactenosPortletForm_Correo_Contacto" type="text" placeholder="Correo Electrónico">
-                                </div>
-                            </div>                            	
+                                                           
                             
                             <div class="form-group col-xs-12">
                                 <label for="RBMcontactenosPortletFormMensaje" class="sr-only">Mensaje</label>
@@ -502,6 +418,7 @@
                             </div>
                             <div class="form-group col-xs-12">
                                 <input id="checkT" type="checkbox" name="aceptaTerminosInput" required=""> Acepto <a href="#" data-toggle="modal" data-target="#modalTerminos">política de tratamiento de datos personales.</a>   
+                                <input type="hidden" name="to" value="Contactenos_portalRBM@rbm.com.co"/>
                             </div>
 
                                 <div class="form-group col-xs-12 col-md-6 blanco">
