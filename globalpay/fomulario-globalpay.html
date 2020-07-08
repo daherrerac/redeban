@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Formulario Solicitud Equipo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/forms.css">        
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-md mr-auto ml-auto static-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://www.rbmcolombia.com/wps/portal/index" style="display: block;margin: 0 auto;width: 100%;">
+                    <img src="images/logo.png" style="margin: 0 auto;display: block;">
+                </a>                                
+            </div>
+        </nav>
+        <!-- /.navbar -->
+        <div class="overlay">
+            <div class="popup">
+                <div class="close">
+                    <button type="button" id="closebtn">X</button>
+                </div>
+                <div class="bodypopup">
+                    <h3>¡Hemos recibido su solicitud!</h3>
+                    <p>Pronto nos pondremos en contácto para<br /> brindarle asesoría especializada</p>
+                </div>
+            </div>
+        </div>        
+        <div class="container-form orange">
+            <div class="wrapper">
+                <h1>¡BIENVENIDOS A LINK DE PAGOS!</h1>
+                <p class="intro">Ingresa tus datos para obtener mayor información:</p>
+                <form action="" method="POST" id="formv3">
+                    <span>Todos los campos son obligatorios:</span>
+                    <fieldset>
+                        <div class="legend">INFORMACIÓN GENERAL</div>
+                        <div class="row">
+                            <div class="col-6">
+                                <label class="forlabel">Nombre Comercio</label>
+                                <input type="text" name="comercio" placeholder="Ej: Guki tejidos" />
+                            </div>
+                            <div class="col-6">
+                                <label class="forlabel">NIT</label>
+                                <input type="text" name="nit" placeholder="Ej: 1111-000-5682" />
+                            </div>                            
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <label class="forlabel">Nombre</label>
+                                <input type="text" name="nombre" placeholder="Ej: Marcela" />
+                            </div>
+                            <div class="col-6">
+                                <label class="forlabel">Apellidos</label>
+                                <input type="text" name="apellidos" placeholder="Ej: Robles Ruiz" />
+                            </div>                            
+                        </div>     
+                        <div class="row radiogroup">
+                            <label class="forlabel">¿Cuentas con Merchant ID (Código único)?</label>
+                            <div class="col-2">
+
+                                <div class="align">
+                                    <span>Si</span>
+                                    <label class="radiotag">                                    
+                                        <input type="radio" name="ismerchant" value="Si">
+                                        <span class="checkmark"></span>                                    
+                                    </label>
+                                </div>
+
+                                <div class="align">
+                                    <span>No</span>
+                                    <label class="radiotag">                                    
+                                        <input type="radio" name="ismerchant" value="No">
+                                        <span class="checkmark"></span>                                    
+                                    </label>  
+                                </div>
+                            </div>      
+                            <div class="col-10">
+                                <input type="text" name="merchant" placeholder="Merchant ID" />
+                            </div>                                                    
+                        </div>                                                        
+
+                    </fieldset>
+                    <fieldset>
+                        <div class="legend">INFORMACIÓN DE CONTACTO</div>
+                        <div class="row">
+                            <div class="col-12">
+                                <label class="forlabel">Correo electrónico</label>
+                                <input type="email" name="email" placeholder="Ej: mrobles@gukitejidos.com" />
+                            </div>                       
+                        </div>
+                        <div class="row radiogroup">
+                            <div class="col-6">
+
+                                <div class="align">
+                                    <span>Celular</span>
+                                    <label class="radiotag">                                    
+                                        <input type="radio" name="tipotelefono" value="Celular">
+                                        <span class="checkmark"></span>                                    
+                                    </label>
+                                </div>
+
+                                <div class="align">
+                                    <span>Fijo</span>
+                                    <label class="radiotag">                                    
+                                        <input type="radio" name="tipotelefono" value="Fijo">
+                                        <span class="checkmark"></span>                                    
+                                    </label>  
+                                </div>
+
+                                <div class="align">
+                                    <span>Número de contacto</span>
+                                </div>                                
+                                
+                            </div>
+                            <div class="col-6">
+                                <input type="text" name="telefono" placeholder="Ej: 2596035" />
+                            </div>                            
+                        </div>     
+                        
+                        <div class="row">
+                            <div class="col-6">
+                                <label class="forlabel">Ciudad</label>
+                                <input type="text" name="ciudad" placeholder="Ej: Bogotá" />
+                            </div>
+                            <div class="col-6">
+                                <label class="forlabel">Dirección</label>
+                                <input type="text" name="direccion" placeholder="Ej: Carrera 88 f # 69" />
+                            </div>                            
+                        </div>
+
+                        <div class="row">
+                            <div class="col-12">
+                                <label class="forlabel">Comentarios</label>
+                                <textarea name="comentarios" autocomplete="on" minlength="10"></textarea>
+                            </div>                     
+                        </div>     
+                        
+                        <div class="row terminos">
+                            <label class="radiocheck">
+                                <input type="checkbox" name="aceptaterminos">
+                                <span class="checkmark"></span>
+                            </label>
+                            <p>Acepto <a href="#" title="política de tratamiento de datos personales">política de tratamiento de datos personales</a></p>                                       
+                        </div>    
+                        
+                        <div class="row captcha-zone">
+                                                                             
+                        </div>     
+                        
+                        <div class="row submit-zone">
+                            <div class="col-12">
+                                <input type="submit" value="ENVIAR" />
+                            </div>                                                 
+                        </div>                             
+
+                    </fieldset>                    
+                </form>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="js/jquery.validate.js"></script>
+        <script src="js/forms.js"></script>
+    </body>
+</html>

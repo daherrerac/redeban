@@ -1,0 +1,556 @@
+/*Font Face*/
+@font-face {
+    font-family: 'helvetica_neuebold';
+    src: url('fonts/helveticaneue-bold-webfont.woff2') format('woff2'),
+         url('fonts/helveticaneue-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'helvetica_neueroman';
+    src: url('fonts/helveticaneue-roman-webfont.woff2') format('woff2'),
+         url('fonts/helveticaneue-roman-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*Generales*/
+html {
+    height: 100%;
+}
+html, body{
+    min-height: 100% !important;
+}
+
+body{
+    font-family: 'helvetica_neueroman'; 
+    font-size: 14px; 
+}
+
+.container-form{
+    background: url('../images/Logo-pie-pagina.svg') no-repeat 4% 97% #F9F9F9;
+    width: 100%;
+    max-width: 100%;
+    background-size: 200px;
+    min-height: 100% !important;
+    height: 100%;    
+}
+
+.container-form .wrapper{
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px 0 40px 0;
+}
+
+.container-form h1{
+    font-family: 'helvetica_neuebold';
+    font-size: 24px;
+    color: #002790;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.container-form .intro{
+    font-size:16px;
+    color: #4D4D4D;
+    text-align: center;
+}
+
+/*Formulario*/
+.container-form label.error,
+.container-form .row .col-6:last-child label.error{
+    color: red;
+    margin: 8px 0 0 0;
+    display: block;
+}
+
+.radiotag label.error{
+    margin: 25px 0 0 0;
+    width: 200px;
+}
+.radiocheck label.error{
+    width: 200px;
+    margin: 35px 0 0 0;
+}
+
+.container-form form{
+    margin: 50px 0 0 0;
+    padding: 0 20px;
+}
+
+.container-form form span{
+    display: block;
+    color: #4D4D4D;
+}
+
+.container-form form fieldset{
+    margin: 35px 0 0 0;
+}
+
+.container-form form .legend{
+    font-family: 'helvetica_neuebold';
+    color: #fff;
+    font-size: 13px;
+    background: #00009F;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    border-radius: 50px;
+    padding: 10px 30px;
+}
+
+.container-form .row{
+    margin: 25px 0 0 0;
+}
+
+.container-form form .forlabel{
+    font-family: 'helvetica_neuebold';
+    display: block;
+    color:#002790;
+    margin: 0 0 10px 0;
+}
+
+.container-form .row > div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.container-form form input[type="text"],
+.container-form form input[type="email"],
+.container-form form textarea{
+    border: 1px solid #808080;
+    color: #000;
+    padding: 12px 20px;
+    border-radius: 7px;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    background: #F9F9F9;
+    transition: all 0.3s;
+}
+::-webkit-input-placeholder { /* Edge */color: #ccc;}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */color: #ccc;}
+::placeholder { color: #ccc; }
+
+
+.container-form form input[type="text"]:focus,
+.container-form form input[type="email"]:focus,
+.container-form form textarea:focus{
+    border: 1px solid #002790;
+}
+
+.container-form .col-2{
+    max-width: 20%;
+    width: 100%;
+}
+
+.container-form .col-10{
+    max-width: 79%;
+    width: 100%;
+}
+
+.container-form .col-6{
+    max-width: 47%;
+    width: 100%;
+}
+.container-form .row .col-6:last-child{
+    margin: 0 0 0 5%;
+}
+.container-form .col-12{
+    max-width: 100%;
+    width: 100%;
+}
+.container-form form textarea{
+    min-height: 130px;
+}
+
+.container-form .captcha-zone,
+.container-form .submit-zone{
+    text-align: center;
+}
+#captcha{
+    display: inline-block;
+    vertical-align: top;
+}
+#captcha img{
+    max-width: 227px;
+    width: 100%;
+}
+.container-form form input[type="submit"]{
+    display: inline-block;
+    color: #002790;
+    text-align: center;
+    font-family: 'helvetica_neuebold';
+    text-transform: uppercase;
+    border: 1px solid #002790;
+    border-radius: 50px;
+    background: #F9F9F9;
+    cursor: pointer;
+    padding: 12px 20px;
+    max-width: 155px;
+    width: 100%;
+    transition: all 0.3s;    
+}
+.container-form form input[type="submit"]:hover{
+    color: #fff;
+    background: #002790;
+}
+
+.container-form .align,
+.container-form .align > span, 
+.container-form .align .radiotag{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.container-form .align{
+    margin: 0 0 0 5%;
+}
+.container-form .align:first-child{
+    margin: 0;
+}
+
+.container-form .align > span{
+    font-family: 'helvetica_neuebold';
+    color:#002790;
+}
+
+.container-form .terminos p{
+    color: #4D4D4D;
+    margin: 0 0 0 2%;
+}
+.container-form .terminos p a{
+    color: #002790;
+}
+.container-form .terminos .radiocheck,
+.container-form .terminos p{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/**UI Element radio buttom***/
+.radiotag{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+}
+.radiotag input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.radiotag .checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #F9F9F9;
+    border: 1px solid #808080;
+    border-radius: 50%;
+}
+
+.radiotag:hover input ~ .checkmark {
+    background-color: #F9F9F9;
+    border: 1px solid #808080;
+}
+
+.radiotag input:checked ~ .checkmark {
+    border: 1px solid #002790;
+    background-color: #F9F9F9;
+}  
+
+.radiotag .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radiotag input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.radiotag .checkmark:after {
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #002790;
+}
+
+/**UI Element Checkbox buttom***/
+
+.radiocheck {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    height: 25px;
+    width: 25px;
+  }
+  
+  .radiocheck input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .radiocheck .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #808080;
+    background-color: #F9F9F9;
+    border-radius: 3px;
+  }
+  
+  .radiocheck:hover input ~ .checkmark {
+    border: 1px solid #808080;
+    background-color: #F9F9F9;
+    border-radius: 3px;
+  }
+  
+  .radiocheck input:checked ~ .checkmark {
+    background-color: #002790;
+    border: 1px solid #002790;
+  }
+  
+  .radiocheck .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .radiocheck input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .radiocheck .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+
+/*******FORMULARIO GRAY**********/
+.container-form.gray .legend{
+    background: #666666;
+}
+
+.container-form.gray form input[type="text"],
+.container-form.gray form input[type="email"],
+.container-form.gray form textarea{
+    border: 1px solid #7c96cc;
+}
+
+.container-form.gray .radiotag input:checked ~ .checkmark {
+    border: 1px solid #000;
+}
+.container-form.gray .radiotag .checkmark:after{
+    background: #000;
+}
+
+
+/*******FORMULARIO ORANGE**********/
+.container-form.orange .legend{
+    background: #ff9d1c;
+}
+
+.container-form.orange form input[type="text"],
+.container-form.orange form input[type="email"],
+.container-form.orange form textarea{
+    border: 1px solid #fbbd7e;
+}
+
+.container-form.orange .radiotag input:checked ~ .checkmark {
+    border: 1px solid #000;
+}
+.container-form.orange .radiotag .checkmark:after{
+    background: #000;
+}
+
+.container-form.orange .terminos p a{
+    color: #ff9d1c;
+}
+
+.container-form.orange form input[type="submit"] {
+    color: #000;
+    border: 1px solid #ff9d1c;
+    background: #ff9d1c;
+}
+.container-form.orange form input[type="submit"]:hover{
+    color: #000;
+    background: #ff9d1c;
+    border: 1px solid #000;
+}
+
+.container-form.orange form span{
+    text-align: center;
+}
+
+/*******POP UP**********/
+.overlay{
+    display: none;
+    position: fixed;
+    z-index: 50;
+    left: 0;
+    top: 0;
+    background:rgba(0, 0, 0, 0.7);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.overlay .popup{
+    background: #fff;
+    border-radius: 10px;
+    max-width: 360px;
+    width: 100%;
+    padding: 20px 20px 50px 20px;
+}
+.overlay .popup .close{
+    text-align: right;
+}
+.overlay .popup .close button{
+    display: inline-block;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #808080;
+}
+.overlay .popup .bodypopup{
+    color: #808080;
+    text-align: center;
+    font-size: 16px;
+}
+.overlay .popup .bodypopup h3{
+    color: #002790;
+    font-family: 'helvetica_neuebold';
+    margin: 10px 0 20px 0;
+    font-size: 18px;
+}
+
+
+
+  /**MEDIAQUERIES***/
+  @media screen and (max-width: 650px){
+    .container-form{
+        background: url('../images/Logo-pie-pagina.svg') no-repeat 4% 98% #F9F9F9;
+        background-size: 125px;
+    }
+
+    .container-form form {
+        padding: 0 20px;
+    }
+
+    .container-form .align {
+        margin: 0 0 0 2%;
+    }
+
+    .container-form .radiogroup .col-6{
+        max-width: 100%;
+        width: 100%;
+    }
+    .container-form .radiogroup .col-6:last-child{
+        margin: 0;
+    }
+    .container-form .radiogroup .col-6 .align:last-child{
+        margin: 20px 0 10px 0;
+        display: block;
+    }
+
+    .container-form .col-2 {
+        max-width: 29%;
+    }
+    .container-form .col-10 {
+        max-width: 70%;
+    }
+
+  }
+
+  @media screen and (max-width: 480px){
+    .container-form {
+        background: url(../images/Logo-pie-pagina.svg) no-repeat 4% 99% #F9F9F9;
+        background-size: 70px;
+    }      
+    .container-form .terminos p{
+        max-width: 88%;
+    }
+    .container-form .row .col-6{
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .container-form .row .col-6:last-child{
+        margin: 0;
+    }
+    .container-form .row .col-6:last-child label{
+        margin: 25px 0 10px 0;
+    }
+    .radiocheck,
+    .radiocheck .checkmark{
+        height: 20px;
+        width: 20px;
+    }
+    .container-form form input[type="submit"]{
+        max-width: 100%;
+    }
+
+    .radiocheck .checkmark:after {
+        left: 7px;
+        top: 2px;
+    }
+    
+  }  
+
+  @media screen and (max-width: 380px){
+    .container-form form .legend{
+        font-size: 11px;
+    }
+
+    .container-form .col-2,
+    .container-form .col-10 {
+        max-width: 100%;
+    }
+    .container-form .col-2{
+        margin: 15px 0 20px 0;
+    }
+    .overlay .popup .bodypopup h3{
+        font-size: 15px;
+    }
+    .overlay .popup .bodypopup{
+        font-size: 12px;
+    }
+
+  }
