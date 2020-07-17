@@ -167,3 +167,7 @@ document.getElementsByTagName('head')[0].appendChild(meta);
 // document.getElementsByTagName('head')[0].appendChild(meta3);
 // document.getElementsByTagName('head')[0].appendChild(meta4);
 // document.getElementsByTagName('head')[0].appendChild(link);
+// var meta5 = document.createElement('meta');
+// meta5.name  ='robots';
+// meta5.setAttribute('content', 'index');
+// document.getElementsByTagName('head')[0].appendChild(meta5);

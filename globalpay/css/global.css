@@ -11393,6 +11393,12 @@ h4 {
   }
 }
 
+@media (max-width: 1420px) {
+  section.top {
+    background-size: 70%;
+  }
+}
+
 @media (max-width: 990px) {
   section.top {
     background-size: 70%;
