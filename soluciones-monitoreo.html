@@ -179,7 +179,7 @@
         <div id="infoCTC" class="cuerpoCTC collapse" >			 
             <div class="container">
                 <div class="row">                                                                                          
-                    <form  style="width:100%" method="POST" action="/wps/portal/Contactenos">
+                    <form id="submit-button" style="width:100%" method="POST" action="/wps/portal/PA_RBMcontactenos.ear/RBMcontactenos.war/_RBMcontactenos/jsp/html/RBMcontactenosPortletView.jsp">
                         <div class="container-contactenos">
                             <!-- <div class="form-group">
                                 <label for="RBMcontactenosPortletFormTipoSolicitud" class="sr-only">Tipo de solicitud:</label>
@@ -238,7 +238,7 @@
                                 
                                 
                             </div>
-                                                           
+                                                            
                             
                             <div class="form-group col-xs-12">
                                 <label for="RBMcontactenosPortletFormMensaje" class="sr-only">Mensaje</label>
@@ -258,7 +258,7 @@
                                     </strong></div>
                                 </div>
                             <div class="form-group col-xs-12" style="text-align: -webkit-center;">
-                                <input name="RBMcontactenosPortletFormSubmit" class="azul btn btn-lg" style="margin-top: 3%; border: 2px solid; border-color: RGB(23,77,150)" type="submit" value="Enviar Mensaje">
+                                <input name="RBMcontactenosPortletFormSubmit" class="azul btn btn-lg" style="margin-top: 3%; border: 2px solid; border-color: RGB(23,77,150)" type="submit" value="Enviar Mensaje" >
                             </div>
                         </div>
                     </form>					
@@ -294,21 +294,21 @@
                                     <span> 018000912363 </span>                                      
                                 </div>
                                 <div class="col-xs-6 col-sm-6  col-md-offset-2 col-md-4">
-                                                                                  
+                                                                                    
                                 </div>
                             </div>
 
                             <div class="row">                                    
                                 <div class="col-xs-6 col-sm-6 offset-md-3 col-md-6" style="margin:0 auto; text-align: center;" >
                                     <span class="azul">Bogotá</span><br>
-                                     
+                                        
                                 </div>
                             </div>
 
                             <div class="row">                                    
                                 <div class="col-xs-6 col-sm-6 offset-md-3 col-md-6" style="margin:0 auto; text-align: center;" >
                                     <span>3323200 - 5600470</span>  
-                                                                         
+                                                                            
                                 </div>
                                 
                             </div>
@@ -387,6 +387,24 @@
         </div>
     </div>
     <!--Fin Modal-->
+
+    <!--Modal contacto-->
+    <div class="modal fade" id="modalContacto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-body">
+                <p>
+                    Gracias por contactarnos, pronto un asesor se pondrá en contacto contigo.
+                </p>                    
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="azul btn btn-lg" data-dismiss="modal" style="background:#ddd">Cerrar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin Modal-->
+
         
     <!--Footer-->        
     <div id="footer" ></div>    

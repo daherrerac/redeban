@@ -41,18 +41,18 @@
                     <h3 class="azul" style="margin:0;"> <br>Publicaciones Reglamentarias <br>según decreto 2230 <a data-toggle="collapse" href="#pdfDecreto"><span data-id="pdfDecreto" class="glyphicon glyphicon-collapse-up botonSpan"> </span></a></h3> 
                     <br>
                     <ul id="pdfDecreto" class="lista collapse" style="padding-left:5px;">
-                        <span class="gris"> Enero a Marzo de 2020 </span>
+                        <span class="gris"> Abril a Junio de 2020 </span>
                         <li>
                             <a href="pdf/Actividades+Consolidadas+MCC.pdf" target="_blank"> 
                             <span class="ico ico-pdf"></span>Actividades Consolidadas MCC</a>
                         </li>
                         <li>
-                            <a href="pdf/Aviso+de+tasas_Tarifas+y+comisiones_Ene-Mar-2020_compressed.pdf" target="_blank"> 
+                            <a href="pdf/2020/07/Tarifas y Comisiones_Abr_Jun-2020_compressed.pdf" target="_blank"> 
                                 <span class="ico ico-pdf"></span>Comisiones de Establecimientos
                             </a>
                         </li>
                         <li>
-                            <a href="pdf/Aviso+de+tasas_Cuotas+de+manejo_Ene-Mar-2020_compressed.pdf" target="_blank">
+                            <a href="pdf/2020/07/Cuotas de manejo_Abr_Jun-2020_compressed.pdf" target="_blank">
                                 <span class="ico ico-pdf"></span>Cuotas de manejo 
                             </a>
                         </li>
@@ -126,222 +126,241 @@
         <!--FIN Segunda sección-->
         
         
-        <!--Contáctenos-->
-        <div id="contactenos" class="row" style="background-image: url(recursos/fondo-contactenos.jpg); background-position: bottom left; background-repeat: no-repeat; background-size: cover; text-align: center;">            
-            <div class="col-md-12 col-lg-12 col-sm-offset-3">
-                <h2 class="azul" style="padding: 10px 0px 10px 30px;">  <img class="hidden-xs" src="recursos/ico-ctc.png" alt="icono ctc"> Contáctenos <a href="#infoCTC" data-toggle="collapse" style="color: rgb(23,77,150);"> <span data-id="infoCTC" class="glyphicon botonSpan glyphicon-collapse-up"> </span> </a></h2>                
-            </div>
-            <div id="infoCTC" class="cuerpoCTC collapse" >			 
-                <div class="container">
-                    <div class="row">                                                                                          
-                        <form  style="width:100%" method="POST" action="/wps/portal/Contactenos">
-                            <div class="container-contactenos">
-                                <!-- <div class="form-group">
-                                    <label for="RBMcontactenosPortletFormTipoSolicitud" class="sr-only">Tipo de solicitud:</label>
-                                    <div class="row">
-                                        <div class="col-lg-5 col-md-5 col-sm-12" >
-                                            <select name="RBMcontactenosPortletFormTipoSolicitud" class="opcForm form-control campoctc" style="border-color: RGB(23,77,150);color: RGB(23,77,150);background-color: white;">
-                                                <option value="afiliarse"> Información general </option>
-                                                <option value="link">Link de pagos </option>
-                                                <option value="afiliarse"> Solicitud de información </option>
-                                                <option value="referir"> Referidos Banco </option>	
-                                                <option value="afiliarse"> Otros </option>							    
-                                            </select>
-                                        </div>
-                                        </div>
-                                </div> -->
-                                <div id="afiliarse"> 
-                                    <!-- <h2 class="azul" style="padding: 10px 0px 10px 20px;"> AFILIARSE </h2> -->
-                                    <div class="row">
-                                        <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                            <label for="RBMcontactenosPortletFormNombre" class="sr-only">Nombre Completo</label>
-                                            <input class="form-control campoctc" name="RBMcontactenosPortletFormNombre" type="text" placeholder="Nombre Completo" required="">
-                                        </div>
-                                        <div class="form-group col-lg-6 col-md-6 col-sm-12">                              
-                                            <label for="RBMcontactenosPortletFormDireccion" class="sr-only">Dirección</label>
-                                            <input class="form-control campoctc" name="RBMcontactenosPortletFormDireccion" type="text" placeholder="Dirección" required="">
-                                        </div>
+    <!--Contáctenos-->
+    <div id="contactenos" class="row" style="background-image: url(recursos/fondo-contactenos.jpg); background-position: bottom left; background-repeat: no-repeat; background-size: cover; text-align: center;">            
+        <div class="col-md-12 col-lg-12 col-sm-offset-3">
+            <h2 class="azul" style="padding: 10px 0px 10px 30px;">  <img class="hidden-xs" src="recursos/ico-ctc.png" alt="icono ctc"> Contáctenos <a href="#infoCTC" data-toggle="collapse" style="color: rgb(23,77,150);"> <span data-id="infoCTC" class="glyphicon botonSpan glyphicon-collapse-up"> </span> </a></h2>                
+        </div>
+        <div id="infoCTC" class="cuerpoCTC collapse" >			 
+            <div class="container">
+                <div class="row">                                                                                          
+                    <form id="submit-button" style="width:100%" method="POST" action="/wps/portal/PA_RBMcontactenos.ear/RBMcontactenos.war/_RBMcontactenos/jsp/html/RBMcontactenosPortletView.jsp">
+                        <div class="container-contactenos">
+                            <!-- <div class="form-group">
+                                <label for="RBMcontactenosPortletFormTipoSolicitud" class="sr-only">Tipo de solicitud:</label>
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 col-sm-12" >
+                                        <select name="RBMcontactenosPortletFormTipoSolicitud" class="opcForm form-control campoctc" style="border-color: RGB(23,77,150);color: RGB(23,77,150);background-color: white;">
+                                            <option value="afiliarse"> Información general </option>
+                                            <option value="link">Link de pagos </option>
+                                            <option value="afiliarse"> Solicitud de información </option>
+                                            <option value="referir"> Referidos Banco </option>	
+                                            <option value="afiliarse"> Otros </option>							    
+                                        </select>
                                     </div>
-                                    <div class="row">
-                                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                            <label for="RBMcontactenosPortletFormCorreo" class="sr-only">Correo Electrónico</label>
-                                            <input class="form-control campoctc" name="RBMcontactenosPortletFormCorreo" type="email" placeholder="Correo Electrónico" required="">
-                                        </div>
-                                        <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                            <label for="RBMcontactenosPortletFormTelefono" class="sr-only">Teléfono</label>
-                                            <input class="form-control campoctc" name="RBMcontactenosPortletFormTelefono" type="number" placeholder="Teléfono" required="">
-                                        </div>
-
                                     </div>
-                                    <div class="row">
-                                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                            <label for="RBMcontactenosPortletFormCiudad" class="sr-only">Ciudad</label>
-                                            <input class="form-control campoctc" name="RBMcontactenosPortletFormCiudad" type="text" placeholder="Ciudad" required="">
-                                        </div>
-                                        <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                            <label for="RBMcontactenosPortletFormEmpresa" class="sr-only">Empresa</label>
-                                            <input class="form-control campoctc" name="RBMcontactenosPortletFormEmpresa" type="text" placeholder="Empresa" required="">
-                                        </div>
+                            </div> -->
+                            <div id="afiliarse"> 
+                                <!-- <h2 class="azul" style="padding: 10px 0px 10px 20px;"> AFILIARSE </h2> -->
+                                <div class="row">
+                                    <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                        <label for="RBMcontactenosPortletFormNombre" class="sr-only">Nombre Completo</label>
+                                        <input class="form-control campoctc" name="RBMcontactenosPortletFormNombre" type="text" placeholder="Nombre Completo" required="">
                                     </div>
-                                    
-                                    <div class="row">
-                                        <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                            <label for="RBMcontactenosPortletFormNit" class="sr-only">NIT</label>
-                                            <input class="form-control campoctc" name="RBMcontactenosPortletFormNit" type="text" placeholder="NIT" required="">
-                                        </div>
+                                    <div class="form-group col-lg-6 col-md-6 col-sm-12">                              
+                                        <label for="RBMcontactenosPortletFormDireccion" class="sr-only">Dirección</label>
+                                        <input class="form-control campoctc" name="RBMcontactenosPortletFormDireccion" type="text" placeholder="Dirección" required="">
                                     </div>
-                                    
-                                    
                                 </div>
-                                                           	
+                                <div class="row">
+                                        <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                        <label for="RBMcontactenosPortletFormCorreo" class="sr-only">Correo Electrónico</label>
+                                        <input class="form-control campoctc" name="RBMcontactenosPortletFormCorreo" type="email" placeholder="Correo Electrónico" required="">
+                                    </div>
+                                    <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                        <label for="RBMcontactenosPortletFormTelefono" class="sr-only">Teléfono</label>
+                                        <input class="form-control campoctc" name="RBMcontactenosPortletFormTelefono" type="number" placeholder="Teléfono" required="">
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                        <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                        <label for="RBMcontactenosPortletFormCiudad" class="sr-only">Ciudad</label>
+                                        <input class="form-control campoctc" name="RBMcontactenosPortletFormCiudad" type="text" placeholder="Ciudad" required="">
+                                    </div>
+                                    <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                        <label for="RBMcontactenosPortletFormEmpresa" class="sr-only">Empresa</label>
+                                        <input class="form-control campoctc" name="RBMcontactenosPortletFormEmpresa" type="text" placeholder="Empresa" required="">
+                                    </div>
+                                </div>
                                 
-                                <div class="form-group col-xs-12">
-                                    <label for="RBMcontactenosPortletFormMensaje" class="sr-only">Mensaje</label>
-                                    <textarea name="RBMcontactenosPortletFormMensaje" rows="5" cols="1" class="form-control campoctc" placeholder="Mensaje" required=""></textarea>
-                                </div>
-                                <div class="form-group col-xs-12">
-                                    <input id="checkT" type="checkbox" name="aceptaTerminosInput" required=""> Acepto <a href="#" data-toggle="modal" data-target="#modalTerminos">política de tratamiento de datos personales.</a>   
-                                    <input type="hidden" name="to" value="Contactenos_portalRBM@rbm.com.co"/>
-                                </div>
-
-                                    <div class="form-group col-xs-12 col-md-6 blanco">
-                                        <div class="azul"> <strong>  
-                                        
-                                        
-                                        
-                                        <label for="">  </label>
-                                        </strong></div>
+                                <div class="row">
+                                    <div class="form-group col-lg-6 col-md-6 col-sm-12">
+                                        <label for="RBMcontactenosPortletFormNit" class="sr-only">NIT</label>
+                                        <input class="form-control campoctc" name="RBMcontactenosPortletFormNit" type="text" placeholder="NIT" required="">
                                     </div>
-                                <div class="form-group col-xs-12" style="text-align: -webkit-center;">
-                                    <input name="RBMcontactenosPortletFormSubmit" class="azul btn btn-lg" style="margin-top: 3%; border: 2px solid; border-color: RGB(23,77,150)" type="submit" value="Enviar Mensaje">
                                 </div>
+                                
+                                
                             </div>
-                        </form>					
-                    </div>
-                    <div class="row hidden-xs contenedorIconos bottomSeccion" style="position:relative;">
-                
-                        <div class="hidden-xs ctc-borde hidden-xs">
-                            <hr class="azul">
-                        </div> 
-                        <div class="col-sm-4 col-xs-12">
-                            <div class="icono-contactenos">
-                                <span class="icoCTC-LINEA_ATENCION blanco"></span>
-                            </div>              
-            
-                            <div class="info-telefonos">                                
-                                <div class="col-xs-6 col-sm-6 offset-md-3 col-md-6" style="margin:0 auto; text-align: center;" >
-                                    <span class="azul">Línea nacional</span></div>                                                                                                                     
-                                <div class="row">
-                                    <div class="col-md-2"></div>
-                                    <div class="col-xs-6 col-sm-6  offset-md-2 col-md-4" style="text-align: center;">
-                                        <span> 018000122363</span>                                      
-                                    </div>                                    
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-2"></div>
-                                    <div class="col-xs-6 col-sm-6  offset-md-2 col-md-4" style="text-align: center;">
-                                        <span>018000912912</span>
-                                    </div>                                    
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-2"></div>
-                                    <div class="col-xs-6 col-sm-6  offset-md-2 col-md-4" style="text-align: center;">
-                                        <span> 018000912363 </span>                                      
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6  col-md-offset-2 col-md-4">
-                                                                                      
-                                    </div>
-                                </div>
-
-                                <div class="row">                                    
-                                    <div class="col-xs-6 col-sm-6 offset-md-3 col-md-6" style="margin:0 auto; text-align: center;" >
-                                        <span class="azul">Bogotá</span><br>
-                                         
-                                    </div>
-                                </div>
-
-                                <div class="row">                                    
-                                    <div class="col-xs-6 col-sm-6 offset-md-3 col-md-6" style="margin:0 auto; text-align: center;" >
-                                        <span>3323200 - 5600470</span>  
-                                                                             
-                                    </div>
-                                    
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-6 col-sm-6 offset-md-3 col-md-6" style="margin:0 auto; text-align: center;" >
-                                        <span class="azul">Cali</span><br>
-                                        <span>6608525</span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-2"></div>
-                                    <div class="col-xs-6 col-sm-6 col-md-4" style="text-align: center;">
-                                        <span class="azul">Barranquilla</span><br>
-                                        <span>3696161</span>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-4" style="text-align: center;">
-                                        <span class="azul">Medellín</span><br>
-                                        <span>3556005</span>
-                                    </div>
-                                </div>                                                                                                                                             
-                            </div>
+                                                            
                             
+                            <div class="form-group col-xs-12">
+                                <label for="RBMcontactenosPortletFormMensaje" class="sr-only">Mensaje</label>
+                                <textarea name="RBMcontactenosPortletFormMensaje" rows="5" cols="1" class="form-control campoctc" placeholder="Mensaje" required=""></textarea>
+                            </div>
+                            <div class="form-group col-xs-12">
+                                <input id="checkT" type="checkbox" name="aceptaTerminosInput" required=""> Acepto <a href="#" data-toggle="modal" data-target="#modalTerminos">política de tratamiento de datos personales.</a>   
+                                <input type="hidden" name="to" value="Contactenos_portalRBM@rbm.com.co"/>
+                            </div>
+
+                                <div class="form-group col-xs-12 col-md-6 blanco">
+                                    <div class="azul"> <strong>  
+                                    
+                                    
+                                    
+                                    <label for="">  </label>
+                                    </strong></div>
+                                </div>
+                            <div class="form-group col-xs-12" style="text-align: -webkit-center;">
+                                <input name="RBMcontactenosPortletFormSubmit" class="azul btn btn-lg" style="margin-top: 3%; border: 2px solid; border-color: RGB(23,77,150)" type="submit" value="Enviar Mensaje" >
+                            </div>
                         </div>
-                
-                        <div class="col-sm-4 col-xs-6">                          
-                            <div class="icono-contactenos" >
-                                <span class="icoCTC-SEDE_PRINCIPAL blanco"></span>
+                    </form>					
+                </div>
+                <div class="row hidden-xs contenedorIconos bottomSeccion" style="position:relative;">
+            
+                    <div class="hidden-xs ctc-borde hidden-xs">
+                        <hr class="azul">
+                    </div> 
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="icono-contactenos">
+                            <span class="icoCTC-LINEA_ATENCION blanco"></span>
+                        </div>              
+        
+                        <div class="info-telefonos">                                
+                            <div class="col-xs-6 col-sm-6 offset-md-3 col-md-6" style="margin:0 auto; text-align: center;" >
+                                <span class="azul">Línea nacional</span></div>                                                                                                                     
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-xs-6 col-sm-6  offset-md-2 col-md-4" style="text-align: center;">
+                                    <span> 018000122363</span>                                      
+                                </div>                                    
                             </div>
-                                <div style="text-align: center;">
-                                <div><span class="azul">Sede Principal</span> </div>
-                                <div><span class="azul">Dirección General:</span> </div>
-                                <div><span> Cra 20 No 33-15</span> </div>
-                                <div><span class="azul">Telefono</span></div>
-                                <div><span> 3077110 </span> </div>
-                                <div><span class="azul ">Bogotá, D.C. Colombia</span></div>
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-xs-6 col-sm-6  offset-md-2 col-md-4" style="text-align: center;">
+                                    <span>018000912912</span>
+                                </div>                                    
                             </div>
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-xs-6 col-sm-6  offset-md-2 col-md-4" style="text-align: center;">
+                                    <span> 018000912363 </span>                                      
+                                </div>
+                                <div class="col-xs-6 col-sm-6  col-md-offset-2 col-md-4">
+                                                                                    
+                                </div>
+                            </div>
+
+                            <div class="row">                                    
+                                <div class="col-xs-6 col-sm-6 offset-md-3 col-md-6" style="margin:0 auto; text-align: center;" >
+                                    <span class="azul">Bogotá</span><br>
+                                        
+                                </div>
+                            </div>
+
+                            <div class="row">                                    
+                                <div class="col-xs-6 col-sm-6 offset-md-3 col-md-6" style="margin:0 auto; text-align: center;" >
+                                    <span>3323200 - 5600470</span>  
+                                                                            
+                                </div>
+                                
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 offset-md-3 col-md-6" style="margin:0 auto; text-align: center;" >
+                                    <span class="azul">Cali</span><br>
+                                    <span>6608525</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-xs-6 col-sm-6 col-md-4" style="text-align: center;">
+                                    <span class="azul">Barranquilla</span><br>
+                                    <span>3696161</span>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-4" style="text-align: center;">
+                                    <span class="azul">Medellín</span><br>
+                                    <span>3556005</span>
+                                </div>
+                            </div>                                                                                                                                             
                         </div>
-                    
-                        <div class="col-sm-4 col-xs-6">                    
-                            <div class="icono-contactenos">
-                                    <span class="icoCTC-UBICACI_N blanco"></span>
-                            </div>
+                        
+                    </div>
+            
+                    <div class="col-sm-4 col-xs-6">                          
+                        <div class="icono-contactenos" >
+                            <span class="icoCTC-SEDE_PRINCIPAL blanco"></span>
+                        </div>
                             <div style="text-align: center;">
-                                <div class="col-sm-12"><span class="azul">Red de Oficinas</span></div>
-                                <a target="_blank" title="" href="mapa.html" class="col-xs-12 linkmaps"> <span class="azul"> <br> Ubicación de oficinas a nivel nacional</span> </a>
-                            </div>
+                            <div><span class="azul">Sede Principal</span> </div>
+                            <div><span class="azul">Dirección General:</span> </div>
+                            <div><span> Cra 20 No 33-15</span> </div>
+                            <div><span class="azul">Telefono</span></div>
+                            <div><span> 3077110 </span> </div>
+                            <div><span class="azul ">Bogotá, D.C. Colombia</span></div>
                         </div>
                     </div>
-                </div>                            
-            </div>
+                
+                    <div class="col-sm-4 col-xs-6">                    
+                        <div class="icono-contactenos">
+                                <span class="icoCTC-UBICACI_N blanco"></span>
+                        </div>
+                        <div style="text-align: center;">
+                            <div class="col-sm-12"><span class="azul">Red de Oficinas</span></div>
+                            <a target="_blank" title="" href="mapa.html" class="col-xs-12 linkmaps"> <span class="azul"> <br> Ubicación de oficinas a nivel nacional</span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>                            
         </div>
-        <!--Fin contáctenos-->
+    </div>
+    <!--Fin contáctenos-->
+        
 
-        <!--Modal-->
-        <div class="modal fade" id="modalTerminos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                <div class="modal-body" style="max-height: 75vh;overflow-y: scroll;">
-                    <p>Con el fin de ofrecer nuestros productos y servicios, , Redeban Multicolor S.A. (en adelante &#147;Redeban), como Responsable del Tratamiento de Datos Personales, podrá solicitar y recolectar datos personales de los visitantes de nuestra página web, o de usuarios ya registrados o vinculados jurídica y comercialmente con Redeban, que serán incorporados en bases de datos de Redeban, en cumplimiento de la normatividad vigente y las Políticas para el Tratamiento de Información de nuestra empresa.
-                    </p>
-                    <p>En este sentido, y en cumplimiento de la normatividad vigente, les manifestamos que, con el ingreso a nuestra página web y las diferentes plataformas o canales allí habilitados, usted como único titular de sus datos personales, nos está autorizando, de manera consciente, plena e informada, para realizar el tratamiento de sus datos personales que nos proporcione voluntariamente para prestarle los servicios habilitados u ofrecidos, los cuales serán objeto de tratamiento exclusivamente para las finalidades descritas anteriormente manifestándole que los mismos serán tratados de forma estrictamente privada y confidencial por nuestros funcionarios, asesores, dependientes y terceros encargados, en los términos de la normatividad vigente.
-                    </p>
-            
-                    <p>
-                    En Redeban estamos comprometidos con salvaguardar la privacidad de sus datos personales, y por ese motivo, los invitamos a leer y conocer nuestras Políticas para el Tratamiento de Información disponibles en el siguiente enlace: www.redebanmulticolor.com.co; recordándole en todo momento que, como titular de la información, usted podrá ejercer los derechos consagrados en la normatividad vigente, en especial los derechos previstos en la Ley 1581 de 2012, concretamente, pero sin limitarse, a los descritos en el Artículo 8 (acceso, rectificación, actualización y supresión), y todas aquellas normas que la reglamenten, adicionen o complementen.
-                    </p>
-            
-                    <p>
-                    Por último, si usted considera que sus datos personales contenidos en un sistema de información, o en una base de datos de Redeban, debe ser objeto de corrección, actualización o supresión, o cuando adviertan el presunto incumplimiento de cualquiera de los deberes contenidos en la normatividad vigente, podrán presentar un reclamo o solicitud ante Redeban, remitiéndola en una primera instancia a través del siguiente correo electrónico habilitado para el efecto por Redeban: protecciondatos@rbm.com.co (en adelante el &#147;Correo Electrónico Autorizado). Redeban atenderá y dará respuesta a los reclamos o solicitudes en los plazos y términos establecidos para el efecto por la legislación vigente. Sin perjuicio de lo anterior, y en el evento que no haya sido atendida su solicitud o reclamo por parte de Redeban, podrá en todo caso acudir posteriormente en una segunda instancia, ante la Superintendencia de Industria y Comercio (www.sic.gov.co). En dicho evento, para la presentación del reclamo ante la Superintendencia de Industria y Comercio se tomará en consideración la naturaleza de la información, siendo procedente dicha solicitud cuando la información: (i) no tenga el carácter de información pública o se trate de un dato público, y (ii) Redeban esté en violación de los principios aplicables para la información pública o del dato público.
-                    </p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="azul btn btn-lg" data-dismiss="modal" style="background:#ddd">Cerrar</button>
-                </div>
-                </div>
+    <!--Modal-->
+    <div class="modal fade" id="modalTerminos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-body" style="max-height: 75vh;overflow-y: scroll;">
+                <p>Con el fin de ofrecer nuestros productos y servicios, , Redeban Multicolor S.A. (en adelante &#147;Redeban), como Responsable del Tratamiento de Datos Personales, podrá solicitar y recolectar datos personales de los visitantes de nuestra página web, o de usuarios ya registrados o vinculados jurídica y comercialmente con Redeban, que serán incorporados en bases de datos de Redeban, en cumplimiento de la normatividad vigente y las Políticas para el Tratamiento de Información de nuestra empresa.
+                </p>
+                <p>En este sentido, y en cumplimiento de la normatividad vigente, les manifestamos que, con el ingreso a nuestra página web y las diferentes plataformas o canales allí habilitados, usted como único titular de sus datos personales, nos está autorizando, de manera consciente, plena e informada, para realizar el tratamiento de sus datos personales que nos proporcione voluntariamente para prestarle los servicios habilitados u ofrecidos, los cuales serán objeto de tratamiento exclusivamente para las finalidades descritas anteriormente manifestándole que los mismos serán tratados de forma estrictamente privada y confidencial por nuestros funcionarios, asesores, dependientes y terceros encargados, en los términos de la normatividad vigente.
+                </p>
+        
+                <p>
+                En Redeban estamos comprometidos con salvaguardar la privacidad de sus datos personales, y por ese motivo, los invitamos a leer y conocer nuestras Políticas para el Tratamiento de Información disponibles en el siguiente enlace: www.redebanmulticolor.com.co; recordándole en todo momento que, como titular de la información, usted podrá ejercer los derechos consagrados en la normatividad vigente, en especial los derechos previstos en la Ley 1581 de 2012, concretamente, pero sin limitarse, a los descritos en el Artículo 8 (acceso, rectificación, actualización y supresión), y todas aquellas normas que la reglamenten, adicionen o complementen.
+                </p>
+        
+                <p>
+                Por último, si usted considera que sus datos personales contenidos en un sistema de información, o en una base de datos de Redeban, debe ser objeto de corrección, actualización o supresión, o cuando adviertan el presunto incumplimiento de cualquiera de los deberes contenidos en la normatividad vigente, podrán presentar un reclamo o solicitud ante Redeban, remitiéndola en una primera instancia a través del siguiente correo electrónico habilitado para el efecto por Redeban: protecciondatos@rbm.com.co (en adelante el &#147;Correo Electrónico Autorizado). Redeban atenderá y dará respuesta a los reclamos o solicitudes en los plazos y términos establecidos para el efecto por la legislación vigente. Sin perjuicio de lo anterior, y en el evento que no haya sido atendida su solicitud o reclamo por parte de Redeban, podrá en todo caso acudir posteriormente en una segunda instancia, ante la Superintendencia de Industria y Comercio (www.sic.gov.co). En dicho evento, para la presentación del reclamo ante la Superintendencia de Industria y Comercio se tomará en consideración la naturaleza de la información, siendo procedente dicha solicitud cuando la información: (i) no tenga el carácter de información pública o se trate de un dato público, y (ii) Redeban esté en violación de los principios aplicables para la información pública o del dato público.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="azul btn btn-lg" data-dismiss="modal" style="background:#ddd">Cerrar</button>
+            </div>
             </div>
         </div>
-        <!--Fin Modal-->
+    </div>
+    <!--Fin Modal-->
+
+    <!--Modal contacto-->
+    <div class="modal fade" id="modalContacto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-body">
+                <p>
+                    Gracias por contactarnos, pronto un asesor se pondrá en contacto contigo.
+                </p>
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="azul btn btn-lg" data-dismiss="modal" style="background:#ddd">Cerrar</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin Modal-->
 
 
     <!--Footer-->        

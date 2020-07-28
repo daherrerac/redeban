@@ -414,6 +414,9 @@ width: 100%;
 .verde {
     color: #9de000;
 }
+.nv-azul{
+    color: #00009F;
+}
 .icono-contactenos, .tel {
     width: 100px;
     border-radius: 100%;
@@ -480,6 +483,67 @@ width: 100%;
 }
 .btn-pagos img{
     width: 100%;
+}
+/*Nueva seccion*/
+.sub-container{
+    width: 85%;
+    margin: 0 auto;
+}
+.titulo-subseccion{
+    font-size: 1.7em; 
+    margin-bottom: 50px;
+}
+.inicio{
+    height: 170px;
+}
+.inicio p{
+    margin-top: 15px;
+}
+.minititulo{
+    color: #00009F;
+    font-size: 1.7em;
+}
+.cajon{
+    width: 90%;
+    margin: 20px auto 0 auto;
+    border-top: 1px solid #00009F;
+    border-bottom: 1px solid #00009F;
+}
+.cajon p{
+    margin: 10px auto;
+}
+.cajon span{
+    color: #FB6B03;
+    font-weight: bold;
+}
+.cajon span.tacha{
+    color: #383838;
+    text-decoration: line-through;
+}
+.nota{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #FB6B03;
+}
+.btn-azul{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background: #00009F;
+    border-radius: 5px;
+    padding: 5px;
+    width: 85%;
+    margin: 20px auto 5px auto;
+    text-align: center;
+}
+.btn-azul:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.aviso{
+    text-align: center;
+    margin: 20px auto;
 }
 /* Sección noticias */
 .azul {
@@ -607,6 +671,16 @@ h1.modal-title{
 }
 .modal-body,.modal-body img{
     margin:0 auto;
+}
+#modalContacto.modal .modal-dialog{
+    margin: 25% auto;
+}
+#modalContacto.modal .modal-body {	
+	padding: 2rem;
+}
+#modalContacto.modal .modal-body p{	
+    text-align: center;
+    font-size: 1.2em;
 }
 .sliderReconocimientos {
     padding-top: 10px;
@@ -1828,6 +1902,12 @@ hr {
         margin-top: 5%;
     }
 }
+@media(max-width:1440px){
+    .sub-container {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
 @media (max-width: 1024px){
     .descpci, .logopci span {
         font-size: 26px;
@@ -1979,6 +2059,18 @@ hr {
     ul#slider-solucionesProcesamiento {
         margin: 0 auto;
         width: 100%;	
+    }
+    .inicio{
+        margin-top: 25px;
+    }
+    .inicio img{        
+        margin: 0 auto;
+        text-align: center; 
+        display: block;
+    
+    }
+    .btn-azul{
+        width: 50%;
     }
 }
 @media (max-width:600px){

@@ -121,7 +121,11 @@ $(document).ready(function () {
         var slide = $(Parent).attr("data-slide");
         ResCarousel(ell, Parent, slide);
     }
-
+    
+    $('#submit-button').on('submit', function(e){
+        $('#modalContacto').modal('show');
+        e.preventDefault();
+    });
 });
 
 //Test
