@@ -484,6 +484,12 @@ width: 100%;
 .btn-pagos img{
     width: 100%;
 }
+h1.mas-grande{
+    font-size: 40px; 
+}
+.mas-grande{
+    font-size: 24px;
+}
 /*Nueva seccion*/
 .sub-container{
     width: 85%;
@@ -583,7 +589,7 @@ img.grayscale:hover {
     margin-left: 115px;
     margin-top: 20px;
     font-size: 34px;
-    padding-top: 35px;
+    padding-top: 80px;
 }
 .fondoAzul {
     background: rgb(23,77,150);
@@ -818,6 +824,23 @@ h1.modal-title{
 .slider-casosExito ul li img{
     margin: 0 auto;
 }
+.parte-2 {
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+.testimonio {
+	padding-top: 5%;
+	height: 100%;
+	padding-bottom: 5%;
+}
+.casosCarousel, .testimonio, .ttlpasos {
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+}
 /*Noticias*/
 .contenedor-introduccionNoticias {
     border-radius: 10px;
@@ -1017,7 +1040,7 @@ ul#slider-solucionesProcesamiento {
     content: "\e902";
 }
 .slider-solucionesRecaudo {
-	width: 600px;
+	width: 800px;
     margin: auto;
     position: relative;
 	padding: 80px 0;
@@ -1033,6 +1056,7 @@ ul#slider-solucionesProcesamiento {
 .slider-solucionesRecaudo ul li {
     width: 200px;
     height: 150px;
+    margin: 0 auto;
 }
 .slider-solucionesRecaudo ul li a {
     color: rgb(23,77,150);
@@ -1074,7 +1098,10 @@ ul#slider-solucionesProcesamiento {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-.recarga-style {
+.recarga-style {	        
+    border-radius: 100%;
+}
+.recarga-style:hover {
 	background: rgb(255,206,0);
     border-color: rgb(255,206,0) !important;
     color: #fff !important;
@@ -1564,11 +1591,11 @@ hr {
 }
 
 .slider-soluciones {
-    width: 800px;
-    position: relative;
-    padding: 0 0 90px 0;
-    overflow: hidden;
-    margin-left: 15%;
+	width: 1000px;
+	position: relative;
+	padding: 0 0 90px 0;
+	overflow: hidden;	
+	margin: 0 auto;
 }
 .slider-soluciones ul {
     list-style: none;
@@ -1710,6 +1737,10 @@ hr {
     height: 100%;
     border: 0;
 }
+.sc-caracteristicas > div > img {
+	margin-top: 20%;
+	margin-bottom: 10%;
+}
 /* Soluciones moviles*/
 .slider-solucionesMoviles {
 	width: 800px;
@@ -1741,6 +1772,40 @@ hr {
 	display: block;
 	text-decoration: none;
 }
+
+
+
+.slider-solucionesMoviles2 {
+	width: 1200px;
+}
+.slider-solucionesMoviles2 {
+	position: relative;
+	padding: 80px 0 100px 0;
+	overflow: hidden;	
+}
+.slider-solucionesMoviles2 ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 200px;
+}
+.slider-solucionesMoviles2 ul li {
+	text-align: center;
+	width: 200px;
+	height: 150px;
+	float: left;
+	visibility: hidden;
+}
+.slider-solucionesMoviles2 ul li a, .slider-solucionesMoviles2 ul li a h4 {
+	color: rgb(23,77,150);
+	width: 100%;
+	height: 100%;
+	padding: 10%;
+	display: block;
+	text-decoration: none;
+}
+
+
 
 [class*=" icoSM-"], [class^="iconSM-"] {
 	font-family: soluciones_moviles !important;
@@ -1937,6 +2002,56 @@ hr {
     .adjust-2 p{
         font-size: 20px;
     }
+    .slider-soluciones, .slider-solucionesRecaudo {
+        width: 100%;
+        position: relative;
+        padding: 0 0 40px 0;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .slider-soluciones ul li , .slider-solucionesRecaudo ul li{
+        text-align: center;
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+    .slider-soluciones ul li a , .slider-solucionesRecaudo ul li a{
+        padding: 5%;
+    }
+    .slider-solucionesRecaudo ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        height: auto;
+        display: block;
+    }
+
+
+    .slider-solucionesMoviles2 {
+        width: 100%;
+    }
+    
+    .slider-solucionesMoviles2 ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .slider-solucionesMoviles2 ul li {
+        text-align: center;
+        width: 100%;
+        height: auto;
+        float: left;
+        text-align: center;
+    }
+    .slider-solucionesMoviles2 ul li a, .slider-solucionesMoviles2 ul li a h4 {
+        color: rgb(23,77,150);
+        width: 100%;
+        height: 100%;
+        padding: 10%;
+        display: block;
+        text-decoration: none;
+    }
 }
 @media (min-width: 992px){
     .contNoticias {
@@ -1944,6 +2059,15 @@ hr {
         margin-top: 75px!important;
         height: 60vh!important;
         background-position: center!important;
+    }
+   
+}
+@media(max-width:990px){
+    h1.mas-grande{
+        font-size: 28px;
+    }
+    .mas-grande{
+        font-size: 18px;
     }
 }
 
@@ -2138,6 +2262,9 @@ hr {
     }
     ol.carousel-indicators{
         margin-bottom: 0;
+    }
+    .sc-caracteristicas{
+        width: 100%;
     }
 }
 @media (max-width:450px){

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Redeban te brinda diversas soluciones para el recaudo en tu comercio, datáfonos, links de pago y app para hacer que los pagos de tus clientes sean más sencillos">
     <meta name="keywords" content="RBM, Redeban, Red Multicolor, redeban multicolor, tarjeta de credito, como recibo tarjeta, aumentar ventas, opciones de pago, ventas con tarjeta">
-    <title>Redeban | Afiliaciones</title>
+    <title>Redeban | Soluciones para comercios</title>
     <!--WC3-->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!-- Bootstrap CSS -->    
@@ -35,18 +35,19 @@
                 <div class="azul" style="font-size: 34px;font-weight: bold;padding-left: 30px;padding-top: 30px"> Soluciones para comercios </div>
             </div>       
             <div class="container slider animated zoomIn">
-                <span id="atras" class="glyphicon glyphicon-menu-left" style="display: inline;"></span>
-                <span id="adelante" class="glyphicon glyphicon-menu-right" style="display: inline;"></span>
+                
                     
                 <div class="slider-soluciones productos">
-                    <ul id="slider-soluciones" style="width: 1000px;">
-                        <li style="visibility: visible;"><a data-id="producto1"><span class="icon-icondatafono producto1 comercio-style"></span><h4>DATÁFONOS</h4></a></li>
-                        <li style="visibility: visible;"><a data-id="producto2"><span class="icoSC-pagoSinContacto producto2"></span><h4>PAGOS SIN CONTACTO</h4></a></li>
-                        <li style="visibility: visible;"><a data-id="producto3"><span class="icon-iconpagosenlinea producto3"></span><h4>PAGA EN LÍNEA RBM</h4></a></li>
-                        <li style="visibility: visible;"><a data-id="producto4"><span class="icoSC-pagaEnTuMoneda producto4"></span><h4>PAGA EN TU MONEDA</h4></a></li>
-                        <li><a data-id="producto5"><span class="icon-iconSIC producto5"></span><h4>SIC</h4></a></li>
+                    <ul id="slider-soluciones">
+                        <li style="visibility: visible;"><a data-id="producto1" data-toggle="collapse" href="#producto1"><span class="icon-icondatafono producto1 comercio-style"></span><h4>DATÁFONOS</h4></a></li>
+                        <li style="visibility: visible;"><a data-id="producto2" data-toggle="collapse" href="#producto2"><span class="icoSC-pagoSinContacto producto2"></span><h4>PAGOS SIN CONTACTO</h4></a></li>
+                        <li style="visibility: visible;"><a data-id="producto3" href="/globalpay/" target="_blank"><span class="icon-iconpagosenlinea producto3"></span><h4>GLOBAL PAY</h4></a></li>
+                        <li style="visibility: visible;"><a data-id="producto4" data-toggle="collapse" href="#producto4"><span class="icoSC-pagaEnTuMoneda producto4"></span><h4>PAGA EN TU MONEDA</h4></a></li>
+                        <li><a data-id="producto5" data-toggle="collapse" href="#producto5"><span class="icon-iconSIC producto5"></span><h4>SIC</h4></a></li>
                     </ul>
                 </div>
+
+
             </div>
         </div>
        
@@ -54,7 +55,9 @@
 
         <!--Segunda sección-->
         <div class="solucionesComercios" id="descripcionComercios">
-            <div id="producto1" ><!-- SECCION 1 -->
+
+            <div id="producto1" class="collapse">
+                <!-- SECCION 1 -->
                
                 <div class="subseccion parte-1" style="background-image: url('comercio/banner-1.jpg');background-position: right center;background-repeat: no-repeat;background-size: cover"> 
                     <div class="row">
@@ -140,7 +143,7 @@
                                         <h3 id="ttlVideoPrincipal" style="text-align: center;"> <span class="azul animated fadeIn">Anulación</span> </h3>
                                     </div>
                                             
-                                    <div id="listadoVideos" class="col-lg-3 offset-lg-1 col-xs-12 col-sm-3 col-sm-offset-1" style="max-height: 370px !important; overflow-y: scroll;">
+                                    <div id="listadoVideos" class="col-lg-3 offset-lg-1 col-xs-12 col-sm-6 col-sm-offset-1" style="max-height: 370px !important; overflow-y: scroll;">
                                         <div class="col-xs-11 col-sm-12">
                                             <div class="hidden-xs margenVideo embed-responsive embed-responsive-16by9 ">                                                           
                                                 <img class="imgVideo" alt="imagen video" src="https://img.youtube.com/vi/Zcw_IyeRXGU/0.jpg" href="https://www.youtube.com/embed/Zcw_IyeRXGU?rel=0&amp;autoplay=1" data-id="Anulación">	 									               
@@ -242,7 +245,8 @@
                     </div>                               
                </div>
             </div>
-            <div id="producto2" style="display: block;"><!-- Seccion 1 -->
+            <div id="producto2" class="collapse">
+                <!-- Seccion 1 -->
                
                 <div class="subseccion parte-1" style="background-image: url(comercio/banner.jpg);background-position: right center;">
                     <div class="row">
@@ -260,14 +264,11 @@
                         </div>
                     </div>
                 </div>
-                                    
-            </div>
-               
-               <!-- Seccion 2 -->
+                <!-- Seccion 2 -->
                
                 <div class="subseccion sc-fondo2" style="background-image: url(comercio/seccion2.jpg); ">                               
                     <div class="sc-caracteristicas container">                            
-                        <div class="col-lg-9 offset-lg-3" style="text-align: justify;">
+                        <div class="col-lg-9 offset-lg-3 col-md-12 col-sm-12" style="text-align: justify;">
                             <img class="img-responsive col-sm-offset-2 col-md-offset-4 col-xs-offset-4" src="comercio/icono-2.png" style=" margin: 10% auto 0 auto" alt="icono comercio">                                 
                             <ul class="blanco">
                             <h2 class="azulSC">Características</h2>
@@ -284,220 +285,135 @@
                <!-- Seccion 3 -->
                 
                <div class="col-xs-12" style="background-image: url(comercio/seccion3-b.jpg);background-position: left center;width: 100%; overflow: hidden; background-size: cover; background-repeat: no-repeat; position: relative;  padding-top: 2%; padding-bottom: 4%;">
-                                        <div class="container">
-                                           <div class="col-md-offset-2 col-sm-offset-4">
-                                               <img class="img-responsive img-descripcion" src="comercio/icono-beneficios.png" alt="beneficios">
-                                           </div>                             
-                                             
-                                           <div class="col-xs-12 col-md-6 col-sm-12 ">
-                                           <div class="sc-beneficios"> 
-                                               <div class="blanco">
-                                                   <h2 class="azulSC">Beneficios:</h2> <br>
-               <ul class="">
-                   <li>Agiliza el proceso de pago y reduce las filas en caja.</li>
-                   <li>Incrementa el tráfico de compradores, debido a la facilidad de pagar montos pequeños con estas tarjetas.</li>
-                   <li>Es de fácil uso para los comercios</li>
-                   <li>Genera un atractivo para los consumidores (nuevas tecnologías). </li>
-               </ul>
-                                               </div>                   
-                                           </div>
-                                           <!--                                    
-                                           <h2 class="azul"><br> Conozca los comercios que tiene Contactless </h2>
-                                           <a href="http://www.comerciospaypasscol.co/" target="_blank"><button class="btn btn-lg azul" style="margin-top: 3%; background-color: rgb(164,204,252);">Ver Comercios</button></a> -->
-                                           </div>                          
-                                       </div>
+                    <div class="container">
+                        <div class="col-md-offset-2 col-sm-offset-4">
+                            <img class="img-responsive img-descripcion" src="comercio/icono-beneficios.png" alt="beneficios">
+                        </div>                             
+                            
+                        <div class="col-xs-12 col-md-6 col-sm-12 ">
+                        <div class="sc-beneficios"> 
+                            <div class="blanco">
+                                <h2 class="azulSC">Beneficios:</h2> <br>
+                                <ul class="">
+                                    <li>Agiliza el proceso de pago y reduce las filas en caja.</li>
+                                    <li>Incrementa el tráfico de compradores, debido a la facilidad de pagar montos pequeños con estas tarjetas.</li>
+                                    <li>Es de fácil uso para los comercios</li>
+                                    <li>Genera un atractivo para los consumidores (nuevas tecnologías). </li>
+                                </ul>
+                            </div>                   
+                        </div>
+                        <!--                                    
+                        <h2 class="azul"><br> Conozca los comercios que tiene Contactless </h2>
+                        <a href="http://www.comerciospaypasscol.co/" target="_blank"><button class="btn btn-lg azul" style="margin-top: 3%; background-color: rgb(164,204,252);">Ver Comercios</button></a> -->
+                        </div>                          
+                    </div>
                                      
-                               </div>
+               </div>
+                                    
+            </div>               
+           
+            <div id="producto4" class="collapse"> 
+                <!-- seccion 1 -->
+                <div class="subseccion parte-1" style="background-image: url(/comercio/banner2RR.jpg);background-position: right center;">                               
+                    <div class="col-md-6 offset-sm-1 col-sm-5 col-xs-10 offset-xs-1 contenedor-introduccionSC">
+                        <div class="introduccionComercios">
+                            <h2 class="azulSC">PAGA EN TU MONEDA</h2> <br>
+                            <p>Es una <span class="azulSC">solución </span>de pago que permite a los extranjeros pagar sus compras en establecimiento de Colombia en su moneda local. 
+                            </p>
+                        </div>
+                        <div class="progress bar-descripcion hidden-xs hidden-sm">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                        </div>
+                    </div>
+                                    
+                </div>
+                <!-- seccion 2 -->
+                <div class="subseccion sc-fondo2" style="background-image: url(/comercio/seccion2_moneda.jpg); ">                               
+                    <div class="sc-caracteristicas container">                            
+                        <div class="col-md-8 offset-sm-1 offset-md-3 col-sm-7 col-xs-12" style="text-align: justify;">
+                            <img class="img-fluid offset-sm-2 offset-md-4 offset-4" src="/comercio/icono_tumoneda.png">                                 
+                            <ul class="blanco">
+                                <h2 class="azulSC">Características</h2>
+                                <li>El datáfono identifica de dónde proviene la tarjeta extranjera y muestra la moneda local como opción al momento de pagar.</li>
+                                <li>Permite la compra en más de 100 monedas diferentes.</li>
+                                <li>El comercio recibe el abono de la compra en pesos colombianos sin cambiar el proceso como se realiza hoy en día y el extranjero recibe en su extracto la compra en su moneda local. </li>
+                                <li>La tasa de cambio que se aplica será la del día de la compra.</li>
+                                <li>Permite la conexión con caja de pagos del comercio.</li>
+                            </ul>                        
+                        </div>                              
+                    </div>            
+                </div>  
+                   <!-- seccion 3 -->
+                   
+                <div class="col-xs-12" style="background-image: url(/comercio/paga-en-tu-moneda.jpg);background-position: left center;width: 100%; overflow: hidden; background-size: cover; background-repeat: no-repeat; position: relative;  padding-top: 2%; padding-bottom: 4%;">
+                    <div class="container">
+                        <div class="col-md-offset-2 col-sm-offset-1">
+                            <img class="img-responsive img-descripcion" src="/comercio/icono-beneficios.png">
+                        </div>                             
+                                                    
+                        <div class="col-xs-12 col-md-6 col-sm-12">
+                            <div class=" sc-beneficios"> 
+                                <div class="blanco">
+                                    <h2 class="azulSC">Beneficios:</h2> <br>
+                                    <ul class="">
+                                        <li> El comercio recibe como ingreso adicional el 1% del valor de las compras que se realicen con esta solución. </li>
+                                        <li> El comercio ampliará sus ventas y clientes al ofrecer sus productos a extranjeros más fácilmente. </li>
+                            <li> Al cliente extranjero le facilita el cálculo del costo de sus compras y sabrá exactamente cuánto pagará. </li>
+                            <li>Redeban es la única red que ofrece más de 100 monedas para este servicio. </li>
+                            
+                                    </ul>
+                                </div>  
+                            </div> 
+                            <h2 class="azulSC">Requisitos:</h2> <br>
+                        <ul class="">
+                            <li> Afiliación a venta presencial y tener un datáfono de Redeban. </li>  
+                        </ul>			
+                                            </div>                         
+                                        </div>
+                                        
+                </div>
+            </div>
+
+            
+            <div id="producto5" class="collapse"> <!-- Seccion 1 -->
+                <div class="subseccion parte-1" style="background-image: url(/comercio/banner-p5.png);background-position: right center;">
+                    <div class="offset-sm-1 col-sm-7 col-lg-5 col-xs-10 offset-xs-1 contenedor-introduccionSC">
+                        <div class="introduccionComercios">
+                            <h2 class="azulSC">SIC</h2> <br>
+                            <p><span class="azulSC">Nuestro Sistema de Información a Comercios </span>le permite a los comercios consultar, consolidar y conciliar la información de las transacciones realizadas en puntos de aceptación de <span class="azulSC"> Redeban.</span>
+                            </p>
+                        </div>
+                        <div class="progress bar-descripcion hidden-xs hidden-sm">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- seccion 2 -->
+                <div class="subseccion sc-fondo2" style="background-image: url(/comercio/seccion2_sic.jpg); ">
+                    <div class="sc-caracteristicas container">                            
+                        <div class="offset-sm-1 offset-md-3 col-sm-7 col-xs-12" style="text-align: justify;">
+                            <img class="img-fluid offset-md-2 offset-md-4 offset-4" src="/comercio/icono_sic.png" alt="sic">                                 
+                                <ul class="blanco">
+                                        <h2 class="azulSC">Beneficios</h2>
+                                    <li>Acceso seguro y fácil.</li>
+                                    <li>No requiere instalarlo en ningún computador, ya que el acceso es por internet.</li>
+                                    <li>Permite descargar reportes en Excel.  </li>
+                                    <li>Permite hacer consultas generales y detalladas. </li>
+                                </ul>
+                                <br>
+                                <a style="font-weight: bold;" href="https://www.rbmcolombia.com/wps/portal" target="_blank" class="blanco">Acceder al SIC WEB</a>
+                                <br>
+                                <a style="font-weight: bold;" download="" href="/wps/wcm/connect/7a0b760b-9e9f-4fcf-810e-c843ecdc79b7/Paso+a+Paso+SIC+WEB.pdf?MOD=AJPERES&amp;CACHEID=7a0b760b-9e9f-4fcf-810e-c843ecdc79b7" class="blanco">Descargar el manual del usuario</a>
+                            </div>                              
+                        </div>            
+                    </div>
+             </div>
                
         </div>  
-        <div id="producto3" style="display: none;"><!-- Seccion 1 -->
-            <div class="subseccion parte-1" style="background-image: url(/wps/wcm/connect/6d141e83-901c-433e-9eb2-0527148d053a/80486198_14.jpg?MOD=AJPERES&amp;CACHEID=6d141e83-901c-433e-9eb2-0527148d053a);background-position: right center;">
-                               
-                            <div class="col-sm-offset-1 col-sm-5 col-xs-10 col-xs-offset-1 contenedor-introduccionSC">
-                                   
-                                <div class="introduccionComercios">
-                                    <h2 class="azulSC">PAGA EN LÍNEA RBM</h2> <br>
-               <p>Es una <span class="azulSC">solución</span> que facilita las <span class="parrafoClaveSC">ventas por internet y</span> canales telefónicos <span class="azulSC">(call center)</span> de forma segura.    
-               </p>
-                                   </div>
-                                   <div class="progress bar-descripcion hidden-xs hidden-sm">
-                                           <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                           </div>
-                                   </div>
-                               </div>
-                           </div>
-               <!-- SECCION 2 DEFINICIONES -->
-                           
-                       <div class="secc2" style="background-image:url('/wps/wcm/connect/1518351a-686d-437d-bebf-1d0b14035b9a/soluciones.jpg?MOD=AJPERES&amp;CACHEID=1518351a-686d-437d-bebf-1d0b14035b9a');width: 100%; overflow: hidden; background-size: cover; background-repeat: no-repeat; position: relative; padding-top: 2%;  padding-bottom: 2%;">
-                              
-                           <div class="container" style="text-align: -webkit-center;">
-                               <div class="col-sm-4">
-                                   <img class="img-responsive" src="/wps/wcm/connect/ccd98e00-0e16-422a-bb9f-eb098837a010/boton-de-pago-120x120.png?MOD=AJPERES&amp;CACHEID=ccd98e00-0e16-422a-bb9f-eb098837a010" alt="">
-               <h3 class="azulSC">Botón de pago</h3>                    
-               <p class="blanco"> Los comercios que tienen una página web con carrito de compras pueden integrar fácilmente una <span class="azulSC"> aplicación de pago de Redeban </span>, para el proceso de pago de sus clientes. Esta aplicación está adaptada también para dispositivos móviles. </p>
-                               </div>
-                               <div class="col-sm-4">
-                                   <img class="img-responsive" src="/wps/wcm/connect/f1f70f35-0edb-4e50-8d59-2829d8ee326d/conexion-directa.png?MOD=AJPERES&amp;CACHEID=f1f70f35-0edb-4e50-8d59-2829d8ee326d" alt="">
-               <h3 class="azulSC">Conexión directa</h3>
-               <p class="blanco"> Para comercios que quieren <span class="azulSC"> diseñar sus propias aplicaciones de pago </span>, esta opción les permite conectar esos aplicativos o software a Redeban.</p>
-                               </div>
-                               <div class="col-sm-4"> 
-                                   <img class="img-responsive" src="/wps/wcm/connect/163514c1-9dd9-463b-afb9-9eaf3274dca2/iconoDatafono.png?MOD=AJPERES&amp;CACHEID=163514c1-9dd9-463b-afb9-9eaf3274dca2" alt="">
-               <h3 class="azulSC">Datáfono Web</h3>
-               <p class="blanco">Para comercios que quieren hacer venta telefónica, Redeban tienen una aplicación web segura para que los vendedores autorizados realicen transacciones de venta con la información que le está dando el cliente por teléfono o de forma presencial. </p>
-                               </div>
-                           </div>            
-                       </div>
-               <!-- Seccion 2 -->
-               <div class="subseccion sc-fondo2" style="background-image: url(/wps/wcm/connect/abe41931-2316-4202-9bcd-c3d40c5f9e6c/seccion2.jpg?MOD=AJPERES&amp;CACHEID=abe41931-2316-4202-9bcd-c3d40c5f9e6c); ">
-                          <div class="sc-caracteristicas container">                            
-                                           <div class="col-sm-offset-1 col-md-offset-3 col-sm-7 col-xs-12" style="text-align: justify;">
-                                               <img class="img-responsive col-sm-offset-2 col-md-offset-4 col-xs-offset-4" src="/wps/wcm/connect/c18f3776-b05f-459a-b28b-8aee1fc18409/icono.png?MOD=AJPERES&amp;CACHEID=c18f3776-b05f-459a-b28b-8aee1fc18409">                                 
-                                           <ul class="blanco">
-                                                <h2 class="azulSC">Características</h2>
-               <li>Acepta tarjetas de crédito de franquicia y tarjetas privadas (Colsubsidio, Comfama, Codensa y CMR Falabella)*.</li>
-               <li>Altos estándares de seguridad de la plataforma.</li>
-               <li> Pensado en la usabilidad hacia nuestros clientes. </li>
-               <li>Permite realizar dispersión de fondos (aplica para comercios que venden a terceros). </li> 
-               <li>Permite hacer transacciones de compra, anulaciones y consultas. </li>
-               
-               <div class="row">
-                   <br> <a href="http://www.pagaenlinearbm.com.co" target="_blank"><button class="btn btn-lg azul" style="margin-top: 3%; background-color:rgb(164,204,252);"> Conozca más </button></a>
-                   </div>                                
-                                           </ul>
-                                              <p class="azulSC">*Previa afiliación del comercio a las franquicias y empresas de tarjetas privadas.</p>
-                                           </div>                              
-                           </div>            
-                       </div>  
-               <!-- Seccion 3 -->
-                
-                           <div class="col-xs-12" style="background-image: url(/wps/wcm/connect/168afa27-ec1b-47ae-b249-12680467bb09/seccion3.jpg?MOD=AJPERES&amp;CACHEID=168afa27-ec1b-47ae-b249-12680467bb09);background-position: left center;width: 100%; overflow: hidden; background-size: cover; background-repeat: no-repeat; position: relative;  padding-top: 2%; padding-bottom: 4%;">
-                                        <div class="container">
-                                           <div class="col-md-offset-2 col-sm-offset-1">
-                                               <img class="img-responsive img-descripcion" src="/wps/wcm/connect/06b0db2b-6bf7-4494-86f2-ec1f19f08fdd/icono-beneficios.png?MOD=AJPERES&amp;CACHEID=06b0db2b-6bf7-4494-86f2-ec1f19f08fdd">
-                                           </div>                             
-                                              
-                                           <div class="col-xs-12 col-md-6 col-sm-12">
-                                           
-                                                   <div class=" sc-beneficios"> 
-                                               <div class="blanco">
-                                                   <h2 class="azulSC">Beneficios:</h2> <br>
-                                                   <ul class="">
-                                                       <li>Cuenta con módulos con alto nivel de usabilidad, para facilitar la experiencia del cliente.</li>
-                                                       <li>Costos competitivos que apoyan el crecimiento de los negocios. </li>
-                                                       <li>Integración fácil a tiendas virtuales. </li>
-                                                   </ul>
-                                               </div>  
-                                           </div> 
-                                            <h2 class="azulSC">Requisitos:</h2> <br>
-                                                   <ul class="">
-                                                       <li>Afiliación a ventas no presenciales</li>
-                                                       <li>Firma del contrato de Paga en Línea RBM.</li>                                        
-                                                   </ul>
-                                          
-                                                 <br>
-                                          <!--     <a href="http://www.comerciospaypasscol.co" target="_blank" style="font-weight: bold;" href="" class="azul">Demo Botón de pago </a>  <br>
-                                               <a href="http://www.comerciospaypasscol.co" target="_blank" style="font-weight: bold;" href="" class="azul">Demo Datáfono Web </a> -->  <br>
-                                               <a href="/wps/wcm/connect/b32cd5c0-993e-43e9-a31a-6530a446092d/Manual+Dat%C3%A1fono+Web+Abril+2015.pdf?MOD=AJPERES&amp;CACHEID=b32cd5c0-993e-43e9-a31a-6530a446092d" style="font-weight: bold;" download="" class="azul">Descargar el manual de usuario de Datáfono  Web</a>
-                                            </div>
-                                       </div>
-                               </div>
-        </div> 
-        <div id="producto4" style="display: none;"> <!-- seccion 1 -->
-        <div class="subseccion parte-1" style="background-image: url(/wps/wcm/connect/86483af8-a65e-420b-b161-591774e860b8/banner2RR.jpg?MOD=AJPERES&amp;CACHEID=86483af8-a65e-420b-b161-591774e860b8);background-position: right center;">                               
-                               <div class="col-sm-offset-1 col-sm-5 col-xs-10 col-xs-offset-1 contenedor-introduccionSC">
-                                   <div class="introduccionComercios">
-                                       <h2 class="azulSC">PAGA EN TU MONEDA</h2> <br>
-               <p>Es una <span class="azulSC">solución </span>de pago que permite a los extranjeros pagar sus compras en establecimiento de Colombia en su moneda local. 
-               </p>
-                                   </div>
-                                   <div class="progress bar-descripcion hidden-xs hidden-sm">
-                                           <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                           </div>
-                                   </div>
-                               </div>
-                               
-                          </div>
-               <!-- seccion 2 -->
-                <div class="subseccion sc-fondo2" style="background-image: url(/wps/wcm/connect/c8511d02-3db0-4419-ac13-9b23b1657867/seccion2.jpg?MOD=AJPERES&amp;CACHEID=c8511d02-3db0-4419-ac13-9b23b1657867); ">
-                               
-                          <div class="sc-caracteristicas container">                            
-                                           <div class="col-sm-offset-1 col-md-offset-3 col-sm-7 col-xs-12" style="text-align: justify;">
-                                               <img class="img-responsive col-sm-offset-2 col-md-offset-4 col-xs-offset-4" src="/wps/wcm/connect/7f1cadcb-1fc7-4fe5-9992-7c5e3467babb/icono.png?MOD=AJPERES&amp;CACHEID=7f1cadcb-1fc7-4fe5-9992-7c5e3467babb">                                 
-                                           <ul class="blanco">
-                                                <h2 class="azulSC">Características</h2>
-               <li>El datáfono identifica de dónde proviene la tarjeta extranjera y muestra la moneda local como opción al momento de pagar.</li>
-               <li>Permite la compra en más de 100 monedas diferentes.</li>
-               <li>El comercio recibe el abono de la compra en pesos colombianos sin cambiar el proceso como se realiza hoy en día y el extranjero recibe en su extracto la compra en su moneda local. </li>
-               <li>La tasa de cambio que se aplica será la del día de la compra.</li>
-               <li>Permite la conexión con caja de pagos del comercio.</li>
-                                           </ul>
-                                             
-                                           </div>                              
-                           </div>            
-                       </div>  
-               <!-- seccion 3 -->
-               
-                <div class="col-xs-12" style="background-image: url(/wps/wcm/connect/77cda23d-5361-4566-9bff-007aff579c88/paga-en-tu-moneda.jpg?MOD=AJPERES&amp;CACHEID=77cda23d-5361-4566-9bff-007aff579c88);background-position: left center;width: 100%; overflow: hidden; background-size: cover; background-repeat: no-repeat; position: relative;  padding-top: 2%; padding-bottom: 4%;">
-                                        <div class="container">
-                                           <div class="col-md-offset-2 col-sm-offset-1">
-                                               <img class="img-responsive img-descripcion" src="/wps/wcm/connect/794b9ff5-c22f-49e9-986b-2a1efd614c3a/icono-beneficios.png?MOD=AJPERES&amp;CACHEID=794b9ff5-c22f-49e9-986b-2a1efd614c3a">
-                                           </div>                             
-                                                                        
-                                           <div class="col-xs-12 col-md-6 col-sm-12">
-               <div class=" sc-beneficios"> 
-                   <div class="blanco">
-                       <h2 class="azulSC">Beneficios:</h2> <br>
-                       <ul class="">
-                           <li> El comercio recibe como ingreso adicional el 1% del valor de las compras que se realicen con esta solución. </li>
-                           <li> El comercio ampliará sus ventas y clientes al ofrecer sus productos a extranjeros más fácilmente. </li>
-               <li> Al cliente extranjero le facilita el cálculo del costo de sus compras y sabrá exactamente cuánto pagará. </li>
-               <li>Redeban es la única red que ofrece más de 100 monedas para este servicio. </li>
-               
-                       </ul>
-                   </div>  
-               </div> 
-                <h2 class="azulSC">Requisitos:</h2> <br>
-                       <ul class="">
-                           <li> Afiliación a venta presencial y tener un datáfono de Redeban. </li>  
-                       </ul>			
-                                            </div>                         
-                                       </div>
-                                     
-                               </div></div>
-               <div id="producto5" style="display: none;"> <!-- Seccion 1 -->
-                   <div class="subseccion parte-1" style="background-image: url(/wps/wcm/connect/a4dd0bca-4126-4e90-9721-fa2ec69ea3ae/banner.png?MOD=AJPERES&amp;CACHEID=a4dd0bca-4126-4e90-9721-fa2ec69ea3ae);background-position: right center;">
-                       <div class="col-sm-offset-1 col-sm-7 col-lg-5 col-xs-10 col-xs-offset-1 contenedor-introduccionSC">
-                                   <div class="introduccionComercios">
-                                       <h2 class="azulSC">SIC</h2> <br>
-               <p><span class="azulSC">Nuestro Sistema de Información a Comercios </span>le permite a los comercios consultar, consolidar y conciliar la información de las transacciones realizadas en puntos de aceptación de <span class="azulSC"> Redeban.</span>
-               </p>
-                                   </div>
-                                   <div class="progress bar-descripcion hidden-xs hidden-sm">
-                                           <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                           </div>
-                                   </div>
-                       </div>
-                  </div>
-               <!-- seccion 2 -->
-                <div class="subseccion sc-fondo2" style="background-image: url(/wps/wcm/connect/ad9060a1-a835-4a24-a072-ae27d8d0c897/seccion2.jpg?MOD=AJPERES&amp;CACHEID=ad9060a1-a835-4a24-a072-ae27d8d0c897); ">
-                          <div class="sc-caracteristicas container">                            
-                                           <div class="col-sm-offset-1 col-md-offset-3 col-sm-7 col-xs-12" style="text-align: justify;">
-                                               <img class="img-responsive col-sm-offset-2 col-md-offset-4 col-xs-offset-4" src="/wps/wcm/connect/583bf824-34cb-413a-8b5c-4930b7828ecb/icono.png?MOD=AJPERES&amp;CACHEID=583bf824-34cb-413a-8b5c-4930b7828ecb">                                 
-                                           <ul class="blanco">
-                                                <h2 class="azulSC">Beneficios</h2>
-               <li>Acceso seguro y fácil.</li>
-               <li>No requiere instalarlo en ningún computador, ya que el acceso es por internet.</li>
-               <li>Permite descargar reportes en Excel.  </li>
-                <li>Permite hacer consultas generales y detalladas. </li>
-                                           </ul>
-                                           <br>
-                                               <a style="font-weight: bold;" href="https://www.rbmcolombia.com/wps/portal" target="_blank" class="blanco">Acceder al SIC WEB</a>
-                                           <br>
-                                               <a style="font-weight: bold;" download="" href="/wps/wcm/connect/7a0b760b-9e9f-4fcf-810e-c843ecdc79b7/Paso+a+Paso+SIC+WEB.pdf?MOD=AJPERES&amp;CACHEID=7a0b760b-9e9f-4fcf-810e-c843ecdc79b7" class="blanco">Descargar el manual del usuario</a>
-                                           </div>                              
-                           </div>            
-                       </div>  </div>
+        
+        
         </div>
         <!--FIN Segunda sección-->
 
@@ -507,7 +423,7 @@
         <!--Contáctenos-->
         <div id="contactenos" class="row" style="background-image: url(recursos/fondo-contactenos.jpg); background-position: bottom left; background-repeat: no-repeat; background-size: cover; text-align: center;">            
             <div class="col-md-12 col-lg-12 col-sm-offset-3">
-                <h2 class="azul" style="padding: 10px 0px 10px 30px;">  <img class="hidden-xs" src="recursos/ico-ctc.png" alt="icono ctc"> Contáctenos <a href="#infoCTC" data-toggle="collapse" style="color: rgb(23,77,150);"> <span data-id="infoCTC" class="glyphicon botonSpan glyphicon-collapse-up"> </span> </a></h2>                
+                <h2 class="azul" style="padding: 10px 0px 10px 30px;">  <img class="hidden-xs" src="recursos/ico-ctc.png" alt="icono ctc"> Contáctanos <a href="#infoCTC" data-toggle="collapse" style="color: rgb(23,77,150);"> <span data-id="infoCTC" class="glyphicon botonSpan glyphicon-collapse-up"> </span> </a></h2>                
             </div>
             <div id="infoCTC" class="cuerpoCTC collapse" >			 
                 <div class="container">
