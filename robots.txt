@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow: 
+Disallow: /pdf
+Disallow: /META-INF
+Disallow: /WEB-INF
+
+Sitemap: https://www.rbmcolombia.com/wps/portal/index/sitemap.xml
