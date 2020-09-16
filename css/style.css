@@ -1960,6 +1960,27 @@ hr {
     max-width: 100px;
     margin: 0 auto;
 }
+/*popup informativo*/
+#modalProductos .modal-dialog {
+	max-width: 600px;    
+    margin: 1.75rem auto;
+    height: 600px;
+}
+#modalProductos .modal-content{
+    background: url(../img/comunicado.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 600px;
+    background-position:center ;
+    border: none;
+}
+#modalProductos .modal-header {	
+	border-bottom: none;
+}
+#modalProductos .modal-body{
+    height: 600px;    
+}
 /* Media Query*/
 @media(min-width:1600px){
     .adjust{
@@ -2275,8 +2296,15 @@ hr {
         float: left;
         padding: 0 5px;
     }
+    #modalProductos .modal-content {        
+        height: 400px;        
+    }
 }
-
+@media (max-width:360px){    
+    #modalProductos .modal-content {        
+        height: 360px;        
+    }
+}
 /*Chat*/
 .chat-window {
     position: fixed;

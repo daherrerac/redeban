@@ -1,9 +1,13 @@
 
 
 $(window).on('load', function() {
-    $(".loader").fadeOut(3000);
+    $(".loader").fadeOut(3000);    
 });
 $(document).ready(function () {
+    $("#contactenos1").on( "click", function() {
+        $("#Contact").toggle("slow"); //formulario de contacto
+    });
+
     $(function() {
         $("#navigation").load("nav.html");
     });
@@ -126,52 +130,53 @@ $(document).ready(function () {
         $('#modalContacto').modal('show');
         e.preventDefault();
     });
+    $('#modalProductos').modal('show');
 });
 
 //Test
 
-// var meta = document.createElement('meta');
-// meta.name  ='robots';
-// meta.setAttribute('content', 'noindex');
-// document.getElementsByTagName('head')[0].appendChild(meta);
+var meta = document.createElement('meta');
+meta.name  ='robots';
+meta.setAttribute('content', 'noindex');
+document.getElementsByTagName('head')[0].appendChild(meta);
 
 
 
 //Produccion
 
-var meta = document.createElement('meta');
-var meta2 = document.createElement('meta');
-var meta3 = document.createElement('meta');
-var meta4 = document.createElement('meta');
-var link = document.createElement('link');
+// var meta = document.createElement('meta');
+// var meta2 = document.createElement('meta');
+// var meta3 = document.createElement('meta');
+// var meta4 = document.createElement('meta');
+// var link = document.createElement('link');
 
-meta.name  ='og:image';
-meta2.name ='og:url';
-meta3.name ='og:type';
-meta4.name ='og:title';
-
-
+// meta.name  ='og:image';
+// meta2.name ='og:url';
+// meta3.name ='og:type';
+// meta4.name ='og:title';
 
 
-link.rel   ='canonical';
-url_host   = window.location.origin;
-url_rel    = window.location.href;
-if(url_rel.includes("index.html")){
-    url_rel = window.location.origin;
-}
 
-meta.setAttribute('content', url_host+'/img/img-redes.jpg');
-meta2.setAttribute('content', url_rel);
-meta3.setAttribute('content', 'business.business');
-meta4.setAttribute('content', document.title);
-link.setAttribute('href', url_rel);
 
-document.getElementsByTagName('head')[0].appendChild(meta);
-document.getElementsByTagName('head')[0].appendChild(meta2);
-document.getElementsByTagName('head')[0].appendChild(meta3);
-document.getElementsByTagName('head')[0].appendChild(meta4);
-document.getElementsByTagName('head')[0].appendChild(link);
-var meta5 = document.createElement('meta');
-meta5.name  ='robots';
-meta5.setAttribute('content', 'index');
-document.getElementsByTagName('head')[0].appendChild(meta5);
+// link.rel   ='canonical';
+// url_host   = window.location.origin;
+// url_rel    = window.location.href;
+// if(url_rel.includes("index.html")){
+//     url_rel = window.location.origin;
+// }
+
+// meta.setAttribute('content', url_host+'/img/img-redes.jpg');
+// meta2.setAttribute('content', url_rel);
+// meta3.setAttribute('content', 'business.business');
+// meta4.setAttribute('content', document.title);
+// link.setAttribute('href', url_rel);
+
+// document.getElementsByTagName('head')[0].appendChild(meta);
+// document.getElementsByTagName('head')[0].appendChild(meta2);
+// document.getElementsByTagName('head')[0].appendChild(meta3);
+// document.getElementsByTagName('head')[0].appendChild(meta4);
+// document.getElementsByTagName('head')[0].appendChild(link);
+// var meta5 = document.createElement('meta');
+// meta5.name  ='robots';
+// meta5.setAttribute('content', 'index');
+// document.getElementsByTagName('head')[0].appendChild(meta5);
