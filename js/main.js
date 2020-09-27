@@ -149,14 +149,25 @@ document.getElementsByTagName('head')[0].appendChild(meta);
 // var meta3 = document.createElement('meta');
 // var meta4 = document.createElement('meta');
 // var link = document.createElement('link');
+// var twitter = document.createElement('meta');
+// var twitter2 = document.createElement('meta');
+// var twitter3 = document.createElement('meta');
+// var twitter4 = document.createElement('meta');
+// var twitter5 = document.createElement('meta');
+// var twitter6 = document.createElement('meta');
 
 // meta.name  ='og:image';
 // meta2.name ='og:url';
 // meta3.name ='og:type';
 // meta4.name ='og:title';
+// twitter.name ='twitter:card';
+// twitter2.name ='twitter:site';
+// twitter3.name ='twitter:title';
+// twitter4.name ='twitter:description';
+// twitter5.name ='twitter:image';
+// twitter6.name ='twitter:url';
 
-
-
+// descripcion = document.querySelector('meta[name="description"]').content;
 
 // link.rel   ='canonical';
 // url_host   = window.location.origin;
@@ -165,16 +176,30 @@ document.getElementsByTagName('head')[0].appendChild(meta);
 //     url_rel = window.location.origin;
 // }
 
-// meta.setAttribute('content', url_host+'/img/img-redes.jpg');
+// meta.setAttribute('content', url_rel+'/img/img-redes.jpg');
 // meta2.setAttribute('content', url_rel);
 // meta3.setAttribute('content', 'business.business');
 // meta4.setAttribute('content', document.title);
 // link.setAttribute('href', url_rel);
 
+// twitter.setAttribute('content','Somos facilitadores de medios de pago, desarrollando soluciones innovadoras que revolucionan la forma en la que se realizan los pagos en Colombia.');
+// twitter2.setAttribute('content', '@RedebanM');
+// twitter3.setAttribute('content', 'Redeban');
+// twitter4.setAttribute('content', descripcion);
+// twitter5.setAttribute('content',  url_rel+'/img/img-redes.jpg');
+// twitter6.setAttribute('content', url_rel);
+
+
 // document.getElementsByTagName('head')[0].appendChild(meta);
 // document.getElementsByTagName('head')[0].appendChild(meta2);
 // document.getElementsByTagName('head')[0].appendChild(meta3);
 // document.getElementsByTagName('head')[0].appendChild(meta4);
+// document.getElementsByTagName('head')[0].appendChild(twitter);
+// document.getElementsByTagName('head')[0].appendChild(twitter2);
+// document.getElementsByTagName('head')[0].appendChild(twitter3);
+// document.getElementsByTagName('head')[0].appendChild(twitter4);
+// document.getElementsByTagName('head')[0].appendChild(twitter5);
+// document.getElementsByTagName('head')[0].appendChild(twitter6);
 // document.getElementsByTagName('head')[0].appendChild(link);
 // var meta5 = document.createElement('meta');
 // meta5.name  ='robots';
