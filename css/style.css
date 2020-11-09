@@ -2291,6 +2291,12 @@ hr {
     }
 }
 @media (max-width:450px){
+    #informes{
+        margin-left: 20px;
+    }
+    .encabezado div{
+        padding-top: 45px;
+    }
     .listar li span {
         margin: 5px 5px;
         float: left;
