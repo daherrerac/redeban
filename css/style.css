@@ -530,7 +530,8 @@ h1.mas-grande{
     display:block;
     margin:  0 auto;
     position: relative;
-    top: -50px;        
+    top: -50px;     
+    height: 206px;   
 }
 .ot-azul{
     color: #0042C7;
@@ -553,11 +554,11 @@ h1.mas-grande{
 .ln-separador{
     width: 90%;
     display: block;
-    margin: 5px auto;
+    margin: 8px auto;
     border-bottom: 1px solid #CFCFCF;
 }
 .cajon{
-    margin: -20px auto 0 auto;
+    margin: -5px auto 0 auto;
     background: #0042C7;
     max-width: 302px;
     display: block;
@@ -572,13 +573,15 @@ h1.mas-grande{
     text-align: center;
     width: 100%;
     margin-bottom: 0;
+    margin-left: 10px;
 }
 .cajon h5{
     font-size: 16px;
     color: #fff;    
-    text-align: center;
-    width: 100%;
+    text-align: left;
+    width: 95%;
     padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .inicio{
@@ -2369,6 +2372,9 @@ hr {
     }
     .titulo-subseccion {
         font-size: 22px;
+    }
+    .data-cajon {
+        margin: 70px auto 0 auto;
     }
 }
 @media (max-width:450px){
