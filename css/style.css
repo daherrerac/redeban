@@ -497,6 +497,10 @@ h1.mas-grande{
     font-size: 24px;
 }
 /*Nueva seccion*/
+.seguridad-bg{
+    background: url(../seguridad/IMAGEN-SEGURIDAD.jpg);
+    background-size: contain;
+}
 .titulo-subseccion{
     font-size: 32px;        
 }
@@ -2159,8 +2163,7 @@ hr {
         margin-top: 75px!important;
         height: 60vh!important;
         background-position: center!important;
-    }
-    
+    }    
    
 }
 @media(max-width:990px){
@@ -2172,6 +2175,9 @@ hr {
     }
     .data-cajon{
         margin: 50px auto 0 auto;
+    }
+    .seguridad-bg{
+        background: none;
     }
 }
 
