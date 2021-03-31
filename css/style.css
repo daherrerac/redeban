@@ -1790,8 +1790,7 @@ hr {
     background-size: cover;
     float: right;
 }
-.sc-caracteristicas, .sc-moviles {
-    height: 100vh;
+.sc-caracteristicas, .sc-moviles {    
     background-repeat: no-repeat;
     width: 57%;
 }
@@ -1826,10 +1825,9 @@ hr {
 .solucionesMoviles{
     padding-bottom: 20px;
 }
+
 .slider-solucionesMoviles {
-	width: 800px;
-}
-.slider-solucionesMoviles {
+    width: 800px;
 	position: relative;
 	padding: 80px 0 100px 0;
 	overflow: hidden;
@@ -1911,7 +1909,8 @@ hr {
 }
 .sc-moviles {
     float: left;
-    padding-top: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 .sc-moviles {
 	background-image: url(../recursos/fondo-noticias.png);
@@ -1919,7 +1918,6 @@ hr {
 	background-position: 100% 0;
 }
 .sc-caracteristicas, .sc-moviles {
-	height: 100vh;
 	background-repeat: no-repeat;
 	width: 57%;
 }
@@ -1936,14 +1934,18 @@ hr {
 	border-radius: 26px;
 	padding: 16px;
 }
+
 .movil-sc > img {
     padding-top: 2%;
 }
 .img-descripcion {
-    height: 20vh;
+    height: 17vh;
 }
 .movil-sc .fuente_gris{
-    padding-bottom: 15%;
+    padding-bottom: 10%;
+}
+.movil-sc ul li, .descripcionPorcesamientos ul li{
+    font-size: 1.35em;
 }
 .fuente_gris {
 	font-weight: 700;
@@ -2164,7 +2166,7 @@ hr {
         height: 60vh!important;
         background-position: center!important;
     }    
-   
+    
 }
 @media(max-width:990px){
     h1.mas-grande{
@@ -2178,6 +2180,13 @@ hr {
     }
     .seguridad-bg{
         background: none;
+    }
+    .slider-solucionesMoviles{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .sc-moviles {
+        width: 90%;
     }
 }
 
@@ -2381,6 +2390,16 @@ hr {
     }
     .data-cajon {
         margin: 70px auto 0 auto;
+    }
+    .slider-solucionesMoviles ul{
+        display: inline;
+    }
+    .slider-solucionesMoviles ul li {
+        text-align: center;
+        height: 275px;
+        display: block;
+        margin: 0px auto;
+        width: 100%;
     }
 }
 @media (max-width:450px){
