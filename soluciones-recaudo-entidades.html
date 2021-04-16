@@ -38,10 +38,10 @@
             <span id="adelanteRecaudo" class="glyphicon glyphicon-menu-right" style="display: inline;"></span> -->
              
             <div class="slider-solucionesRecaudo productos">
-                <ul id="slider-solucionesRecaudo" style="width: 800px; margin-left: 0px;">
-                    <li style="visibility: visible;"><a data-id="producto1" data-toggle="collapse" href="#producto1"><span class="icoRecaudo-RECAUDO_ELECTRONICO producto1"></span><h4>RECAUDO ELECTRÓNICO</h4></a></li>                    
-                    <li style="visibility: visible;"><a data-id="producto3" data-toggle="collapse" href="#producto3"><span class="icoRecaudo-MODULOS_PUNTO_DE_PAGO producto3"></span><h4>MÓDULOS PUNTO PAGO</h4></a></li>
-                    <li style="visibility: visible;"><a data-id="producto4" data-toggle="collapse" href="#producto4"><span class="icoRecaudo-PAGOS_PERIODICOS producto4"></span><h4>PAGOS PERIÓDICOS</h4></a></li>				
+                <ul id="slider-solucionesRecaudo" style="margin: 0 auto;">
+                    <li style="visibility: visible;"><a data-id="producto1" data-toggle="collapse" href="#producto1" id="link1"><span class="icoRecaudo-RECAUDO_ELECTRONICO producto1"></span><h4>RECAUDO ELECTRÓNICO</h4></a></li>                    
+                    <li style="visibility: visible;"><a data-id="producto3" data-toggle="collapse" href="#producto3" id="link3"><span class="icoRecaudo-MODULOS_PUNTO_DE_PAGO producto3"></span><h4>MÓDULOS PUNTO PAGO</h4></a></li>
+                    <li style="visibility: visible;"><a data-id="producto4" data-toggle="collapse" href="#producto4" id="link4"><span class="icoRecaudo-PAGOS_PERIODICOS producto4"></span><h4>PAGOS PERIÓDICOS</h4></a></li>				
                 </ul>
             </div>
         </div>
@@ -332,6 +332,19 @@
     <script src="js/jquery-3.2.1.min.js"></script>    
     <script src="js/bootstrap.min.js" ></script>
     <script src="js/main.js"></script>
-    
+    <script>
+        $( "#link1" ).click(function() {                        
+            $("#producto3").removeClass('show');  
+            $("#producto4").removeClass('show');            
+        });
+        $( "#link3" ).click(function() {            
+            $("#producto1").removeClass('show');  
+            $("#producto4").removeClass('show');              
+        });
+        $( "#link4" ).click(function() {            
+            $("#producto1").removeClass('show');  
+            $("#producto3").removeClass('show');              
+        });
+    </script>
   </body>
 </html>

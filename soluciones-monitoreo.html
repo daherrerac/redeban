@@ -39,8 +39,8 @@
              
             <div class="slider-solucionesMonitoreo productos">
                 <ul id="slider-solucionesMonitoreo" style="width: 100%; margin: 0px auto;text-align: center;">
-                    <li style="visibility: visible;"><a data-id="producto1" data-toggle="collapse" href="#producto1"><span class="icoMonitoreo-MONITOREO producto1"></span><h4>MONITOREO</h4></a></li>
-                    <li style="visibility: visible;"><a data-id="producto2" data-toggle="collapse" href="#producto2"><span class="icoMonitoreo-ORION producto2"></span><h4>ORION</h4></a></li>								
+                    <li style="visibility: visible;"><a data-id="producto1" data-toggle="collapse" href="#producto1" id="link1"><span class="icoMonitoreo-MONITOREO producto1"></span><h4>MONITOREO</h4></a></li>
+                    <li style="visibility: visible;"><a data-id="producto2" data-toggle="collapse" href="#producto2" id="link2"><span class="icoMonitoreo-ORION producto2"></span><h4>ORION</h4></a></li>								
                 </ul>
             </div>
         </div>
@@ -67,7 +67,7 @@
             <div class="subseccion sc-fondo2" style="background-image: url('monitoreo/imagen-2.jpg'); ">
                             
                 <div class="sc-caracteristicas container">                            
-                    <div class="offset-sm-1 offset-md-3 col-sm-7 col-xs-12" style="text-align: justify;">
+                    <div class="offset-sm-1 offset-md-2 col-sm-7 col-md-9 col-xs-12" style="text-align: justify;">
                         <img class="img-responsive col-sm-offset-2 col-md-offset-4 col-xs-offset-4" style=" margin-top: 10%" src="monitoreo/icono-monitoreo.png" alt="monitoreo">                                     
                         <ul class="listaMonitoreo blanco">
                             <h2 class="azulM">Características</h2>
@@ -239,6 +239,14 @@
     <script src="js/jquery-3.2.1.min.js"></script>    
     <script src="js/bootstrap.min.js" ></script>
     <script src="js/main.js"></script>
+    <script>
+        $( "#link1" ).click(function() {                        
+            $("#producto2").removeClass('show');                         
+        });
+        $( "#link2" ).click(function() {            
+            $("#producto1").removeClass('show');              
+        });        
+    </script>
     
   </body>
 </html>

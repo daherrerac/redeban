@@ -456,6 +456,7 @@ width: 100%;
 }
 .subseccion {
     padding-top: 50px;
+    
 }
 .iva-banner{
     position: relative;
@@ -665,6 +666,8 @@ img.grayscale:hover {
 /* Quienes*/
 .seccionTitulo {
     display: inline-flex;
+    font-size: 35px;
+    font-weight: bold;
 }
 .encabezado2, .encabezado{
     margin-left: 115px;
@@ -991,7 +994,7 @@ h1.modal-title{
 }
 ul#slider-solucionesProcesamiento {
 	margin: 0 auto;
-	width: 400px;	
+	width: auto;	
 }
 .slider-solucionesProcesamiento ul {
     list-style: none;
@@ -1034,11 +1037,12 @@ ul#slider-solucionesProcesamiento {
 }
 .descripcionPorcesamientos {
     color: #fff;
-    text-align: justify;
+    text-align: left;
     margin: 2% 3% 0 2%;
 }
 .descripcionPorcesamientos p {
     font-size: 19px;
+    text-align: left;
 }
 .slider-solucion_procesamiento_bono {
     width: 1000px;
@@ -1047,6 +1051,7 @@ ul#slider-solucionesProcesamiento {
     position: relative;
     padding: 80px 0;
     overflow: hidden;    
+    margin: 0 auto;
 }
 .slider-solucion_procesamiento_bono ul {
     list-style: none;
@@ -1068,6 +1073,9 @@ ul#slider-solucionesProcesamiento {
     display: block;
     text-decoration: none;
 }
+.slider-solucion_procesamiento_bono span{
+    font-size: 16px;
+}
 .rojoSP, .rojoTinto {
     color: #88181F;
 }
@@ -1077,6 +1085,7 @@ ul#slider-solucionesProcesamiento {
 }
 .beneficiosSP div p {
     margin: 4% 0;
+    font-size: 16px;
 }
 .beneficiosSP img{
     margin: 0 auto;
@@ -1098,7 +1107,7 @@ ul#slider-solucionesProcesamiento {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	height: 250px;
+	height: 420px;
 }
 .slider-solucion_procesamiento_bono img{
     margin:0 auto;
@@ -1126,6 +1135,7 @@ ul#slider-solucionesProcesamiento {
     position: relative;
 	padding: 80px 0;
 	overflow: hidden;
+    text-align: center;
 }
 .slider-solucionesRecaudo ul {
 	list-style: none;
@@ -1156,9 +1166,15 @@ ul#slider-solucionesProcesamiento {
 .azulRecaudo {
     color: #010039;
 }
+p.azulRecaudo{
+    font-size: 19px;
+}
 .ttlRecaudo {
     color: #010039;
     font-weight: 700;
+}
+h2.ttlRecaudo{
+    font-size: 20px;
 }
 .introduccionRecaudos {
 	color: #fff;
@@ -1167,6 +1183,61 @@ ul#slider-solucionesProcesamiento {
 .bar-descripcionRecaudo div {
     width: 100%;
     background-color: #010039;
+}
+.listaRecaudo h2{
+    font-size: 20px;
+}
+.listaRecaudo li{
+    font-size: 17px;
+}
+.slider-solucionesProcesamiento2 ul{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+.slider-solucionesProcesamiento2 ul li {
+	text-align: center;	
+	height: auto;
+	display: inline-flex;
+	text-align: center;
+	width: 49%;
+    margin: 0 auto;
+}
+.slider-solucionesProcesamiento2 ul li a{
+    display: block;
+    margin: 0 auto;
+}
+.slider-solucionesProcesamiento2 ul li a h4 {
+    color: rgb(23,77,150);
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    display: block;
+    text-decoration: none;
+}
+.sgi{
+    position: relative;
+}
+.sgi .close{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+.sgi .card{
+    background: #e7e7e7;
+    border: none;
+}
+.sgi .card p{
+    padding: 40px;
+    font-size: 17px;
+}
+.sgi .card ul{
+    padding: 10px 70px;
+    font-size: 17px;
+}
+.sgi p{
+    font-size: 17px;
 }
 /*Recargas*/
 [class*=" icoRecarga-"], [class^="icoRecarga-"] {
@@ -1193,15 +1264,17 @@ ul#slider-solucionesProcesamiento {
     content: "\e901";
 }
 .slider-solucionesRecarga {
-	width: 600px;
+	width: 100%;
+    max-width:600px;
     margin: auto;
     height: 250px;
 }
 .slider-solucionesRecarga ul {
-    list-style: none;    
-	margin: 0;
+    list-style: none;    	
 	padding: 0;
 	height: 200px;
+    width: 200px; 
+    margin: 0px auto;
 }
 
 .slider-solucionesRecarga ul li a {
@@ -1219,10 +1292,10 @@ ul#slider-solucionesProcesamiento {
     text-align: center;
 }
 .parte-1 {
-	width: 100%;
-	height: 90vh;
+	width: 100%;	
 	background-size: cover;
 	background-repeat: no-repeat;
+    padding-bottom: 50px;
 }
 .introduccionRecaudos {
 	color: #fff;
@@ -1234,6 +1307,7 @@ ul#slider-solucionesProcesamiento {
 	background: rgb(23,77,150);
 	border-radius: 10px;
 	opacity: .8;
+    padding-bottom: 10px;
 }
 .amarillo {
 	color: #ffce00;
@@ -1275,6 +1349,7 @@ ul#slider-solucionesProcesamiento {
 	margin: 0;
 	padding: 0;
 	height: 300px;
+    text-align: center;
 }
 .slider-solucionesFidelizacion ul li {
 	width: 200px;
@@ -1357,24 +1432,20 @@ ul#slider-solucionesProcesamiento {
 .icoMonitoreo-ORION::before {
 	content: "\e901";
 }
-.slider-solucionesMonitoreo {
-	width: 800px;
-}
+
 .slider-solucionesMonitoreo {
 	position: relative;
 	padding: 80px 0;
 	overflow: hidden;
-	margin-left: 15%;
 }
 .slider-solucionesMonitoreo ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-    height: 200px;
+    height: auto;
     display: inline-flex;
 }
-.slider-solucionesMonitoreo ul li {
-    
+.slider-solucionesMonitoreo ul li {    
 	width: 200px;
 	height: 150px;
 }
@@ -1405,6 +1476,10 @@ ul#slider-solucionesProcesamiento {
 	color: #fff;
 	font-size: 24px;
 	margin: 7% 5% 6% 4%;
+    padding: 2% 0;
+}
+.introduccionRecaudos p{
+    font-size: 19px;
 }
 .contenedor-introduccionSC {
 	margin-top: 4%;
@@ -1422,6 +1497,10 @@ ul#slider-solucionesProcesamiento {
 }
 .listaMonitoreo li {
 	list-style: circle url(../recursos/puntoMonitoreo.png);
+    font-size: 19px;
+}
+.listaMonitoreo p{
+    font-size: 19px;
 }
 /* Afiliación*/
 #slider-procesoAfiliacion li a > span {
@@ -1761,18 +1840,17 @@ hr {
     opacity: .8;
 }
 .parrafoClaveSC {
-    font-size: 33px;
+    font-size: 21px;
+    font-weight: bold;
 }
-.parte-1 {
-    width: 100%;
-    height: 90vh;
-    background-size: cover;
-    background-repeat: no-repeat;
+.listaRecarga li{
+    font-size: 19px;
 }
 .introduccionComercios {
     color: #fff;
-    font-size: 27px;
+    font-size: 19px;
     margin: 7% 8% 6%;
+    padding-top: 3%;
 }
 .bar-descripcion {
     margin-left: 5%;
@@ -1794,8 +1872,12 @@ hr {
     background-repeat: no-repeat;
     width: 57%;
 }
+.sc-caracteristicas a{
+    font-size: 18px;
+}
 .solucionesComercios li {
     list-style: circle url(../comercio/punto-azul.png);
+    font-size: 18px;
 }
 .sc-beneficios {
     margin-top: 4%;
@@ -1818,7 +1900,7 @@ hr {
     border: 0;
 }
 .sc-caracteristicas > div > img {
-	margin-top: 20%;
+	margin-top: 5%;
 	margin-bottom: 10%;
 }
 /* Soluciones moviles*/
@@ -1920,6 +2002,7 @@ hr {
 .sc-caracteristicas, .sc-moviles {
 	background-repeat: no-repeat;
 	width: 57%;
+    padding: 5% 0;
 }
 .sc-moviles > div > div {
     font-size: 19px;
@@ -1952,6 +2035,9 @@ hr {
 	font-size: 13px;
 	color: #51514F;
 	margin-bottom: 15%;
+}
+.pointComercios{
+    font-size: 17px;
 }
 /*Footer*/
 .row:before {
@@ -2188,6 +2274,48 @@ hr {
     .sc-moviles {
         width: 90%;
     }
+    .sc-caracteristicas {        
+        width: 100%;    
+        background-size: cover;
+        float: right;    
+    }
+    .sc-caracteristicas.container{
+        width: 100%;
+        max-width: 800px;
+    }
+    .slider-solucion_procesamiento_bono {
+        width: 100%;
+    }
+    .slider-solucion_procesamiento_bono ul {
+        display: grid;
+        height: auto;
+    }
+    .slider-solucion_procesamiento_bono ul li {
+        width: 100%;
+    }
+    .slider-solucion_procesamiento_bono ul li a {
+        padding: 10px;
+        margin: 10px auto;
+    }
+    .slider-solucionesProcesamiento {
+        width: 100%;
+        margin-left: auto;
+        padding: 60px 0 100px 0;
+    }
+    .slider-solucionesProcesamiento.productos ul.entidades li {
+        text-align: center;
+        width: 160px;
+        height: 150px;
+        float: left;
+    }
+    .productos .entidades span {
+        font-size: 130px;
+    }
+
+    .productos .entidades h4 {
+        font-size: 16px;
+        width: 100%;        
+    }
 }
 
 @media (max-height: 768px){
@@ -2249,7 +2377,7 @@ hr {
         font-size: 13px;
     }
     .bannerSP, .seccionDescripcion {
-        height: 90vh;
+        height: auto;
     }
     .navbar {
         height: 90px;
@@ -2314,6 +2442,12 @@ hr {
     }
     .btn-azul{
         width: 50%;
+    }
+    .sc-caracteristicas {        
+        float: none;    
+    }
+    .slider-solucion_procesamiento_bono ul li {        
+        height: auto;        
     }
 }
 @media (max-width:600px){
@@ -2400,6 +2534,20 @@ hr {
         display: block;
         margin: 0px auto;
         width: 100%;
+    }
+    .sc-caracteristicas {
+        background-position: bottom;
+    }
+    .slider-solucionesProcesamiento.productos ul.entidades li {        
+        width: 100%;
+        height: auto;        
+    }
+    .sgi .card ul{
+        padding: 10px 30px;        
+    }
+    .mobile-img img{
+        width: 60px;
+        height: 60px;
     }
 }
 @media (max-width:450px){
@@ -2531,6 +2679,12 @@ hr {
         max-width: 90%;
         margin: 0 auto;
         max-height: 50vh;
+    }
+    .slider-solucionesFidelizacion ul{
+        height: auto;
+    }
+    .slider-solucionesFidelizacion ul li {        
+        height: auto;        
     }
     
 }

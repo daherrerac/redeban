@@ -40,8 +40,8 @@
             <div class="slider-solucionesProcesamiento productos">
                 <ul id="slider-solucionesProcesamiento" style="width: 400px; margin: 0px auto;">
                 
-                    <li style="visibility: visible;"><a data-id="producto3" data-toggle="collapse" href="#producto3"><span class="icoSP-TARJETA-PRIVADA producto3 sp-style"></span><h4>TARJETAS PRIVADAS</h4></a></li>
-                    <li style="visibility: visible;"><a data-id="producto5" data-toggle="collapse" href="#producto5"><span class="icoSP-BONO producto5"></span><h4>BONOS</h4></a></li>
+                    <li style="visibility: visible;"><a data-id="producto3" data-toggle="collapse" href="#producto3" id="link3"><span class="icoSP-TARJETA-PRIVADA producto3 sp-style"></span><h4>TARJETAS PRIVADAS</h4></a></li>
+                    <li style="visibility: visible;"><a data-id="producto5" data-toggle="collapse" href="#producto5" id="link5"><span class="icoSP-BONO producto5"></span><h4>BONOS</h4></a></li>
                     
                 </ul>
            </div>
@@ -56,7 +56,7 @@
             <div class="col-xs-12 col-sm-9 offset-sm-1">
                 <img class="col-sm-offset-1" src="procesamiento/ICONO-TARJETA-PRIVADA.png" alt="tarjeta" >
                         <p><br></p>
-                <div class="col-sm-10 col-md-6 contenedorProcesamientos">
+                <div class="col-sm-10 col-md-8 col-lg-6 contenedorProcesamientos">
                     <div class="descripcionPorcesamientos">
                         <p dir="ltr" style="padding-top:10px">Para <span class="blanco">empresas</span> o <span class="blanco">instituciones financieras</span> que quieren emitir una tarjeta de marca propia, Redeban les ofrece el procedimiento de las tarjetas, ajustando a las necesidades del cliente y con diferentes funcionalidades de acuerdo con la estrategia.</p>
                     </div>
@@ -105,9 +105,11 @@
         <!-- SECCION3 --> 
         
          <div class="seccionProcesamientos" style="background-image: url('procesamiento/imagen-fondo.jpg');">
-            <div class="encabezado2 col-sm-offset-1 seccionTitulo">
-                <img class="img-descripcion" src="procesamiento/beneficios.png" alt="beneficios">
-                <div class="rojoSP"> Beneficios </div>
+            <div class="container">
+                <div class="col-sm-offset-1 seccionTitulo">
+                    <img class="img-descripcion" src="procesamiento/beneficios.png" alt="beneficios">
+                    <div class="rojoSP" style="margin-top: 20%;margin-left: 5%;"> Beneficios </div>
+                </div>
             </div>  
         
             <div class="container beneficiosSP">
@@ -148,7 +150,7 @@
             <div class="col-xs-12 col-sm-9 offset-sm-1">
                 <img class="col-sm-offset-1" src="procesamiento/icono-bono.png" alt="bono" >
                 <p><br></p>
-                <div class="col-sm-10 col-md-6 contenedorProcesamientos">
+                <div class="col-sm-10 col-md-10 col-lg-6 contenedorProcesamientos">
                     <div class="descripcionPorcesamientos">
                         <p dir="ltr" style="padding-top:10px">La plataforma para la administración de los <span class="blanco">bonos es una solución segura y ágil</span> que permite habilitar, consultar saldo y redimir total o parcialmente, los bonos de banda magnética o bonos virtuales en los datáfonos.</p>
 
@@ -218,11 +220,13 @@
         
             <!-- SECCION 3 -->
             
-            <div class="seccionProcesamientos" style="background-image: url('procesamiento/imagen-fondo2.jpg');">
-                <div class="encabezado2 col-sm-offset-1 seccionTitulo">
-                    <img class="img-descripcion" src="procesamiento/beneficios.png">
-                    <div class="rojoSP"> Beneficios </div>
-                </div> 
+            <div class="seccionProcesamientos" style="background-image: url('procesamiento/imagen-fondo2.jpg'); background-size: cover;">
+                <div class="container">
+                    <div class="col-sm-offset-1 seccionTitulo">
+                        <img class="img-descripcion" src="procesamiento/beneficios.png">
+                        <div class="rojoSP" style="margin-top: 20%;margin-left: 5%;"> Beneficios </div>
+                    </div> 
+                </div>
                 <div class="container beneficiosSP" style="text-align: -webkit-center;">
                     <div class="row">
                         <div class="col-sm-6">
@@ -330,6 +334,14 @@
     <script src="js/jquery-3.2.1.min.js"></script>    
     <script src="js/bootstrap.min.js" ></script>
     <script src="js/main.js"></script>
+    <script>        
+        $( "#link3" ).click(function() {            
+            $("#producto5").removeClass('show');            
+        });
+        $( "#link5" ).click(function() {            
+            $("#producto3").removeClass('show');            
+        });
+    </script>
     
   </body>
 </html>

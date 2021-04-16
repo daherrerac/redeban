@@ -39,8 +39,8 @@
              
             <div class="slider-solucionesRecaudo productos">
                 <ul id="slider-solucionesRecaudo" style="width: 800px; margin-left: 0px;">                    
-                    <li style="visibility: visible;"><a data-id="producto3" data-toggle="collapse" href="#producto3"><span class="icoRecaudo-MODULOS_PUNTO_DE_PAGO producto3"></span><h4>MÓDULOS PUNTO PAGO</h4></a></li>
-                    <li style="visibility: visible;"><a data-id="producto4" data-toggle="collapse" href="#producto4"><span class="icoRecaudo-PAGOS_PERIODICOS producto4"></span><h4>PAGOS PERIÓDICOS</h4></a></li>				
+                    <li style="visibility: visible;"><a data-id="producto3" data-toggle="collapse" href="#producto3" id="link1"><span class="icoRecaudo-MODULOS_PUNTO_DE_PAGO producto3"></span><h4>MÓDULOS PUNTO PAGO</h4></a></li>
+                    <li style="visibility: visible;"><a data-id="producto4" data-toggle="collapse" href="#producto4" id="link2"><span class="icoRecaudo-PAGOS_PERIODICOS producto4"></span><h4>PAGOS PERIÓDICOS</h4></a></li>				
                 </ul>
             </div>
         </div>
@@ -257,6 +257,14 @@
     <script src="js/jquery-3.2.1.min.js"></script>    
     <script src="js/bootstrap.min.js" ></script>
     <script src="js/main.js"></script>
+    <script>
+        $( "#link1" ).click(function() {                        
+            $("#producto4").removeClass('show');                          
+        });
+        $( "#link2" ).click(function() {            
+            $("#producto3").removeClass('show');                        
+        });        
+    </script>
     
   </body>
 </html>

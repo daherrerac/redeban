@@ -45,9 +45,9 @@
              
             <div class="slider-solucionesMoviles productos">
                 <ul id="slider-solucionesMoviles" style="width: 600px; margin: 0px auto;">
-                    <li style="visibility: visible;"><a data-id="producto1" href="#producto1" aria-expanded="false" data-toggle="collapse"><span class="iconSM-MINIDATAFONO producto1"></span><h4>MINIDATÁFONO</h4></a></li>
+                    <li style="visibility: visible;"><a data-id="producto1" href="#producto1" aria-expanded="false" data-toggle="collapse" id="link1"><span class="iconSM-MINIDATAFONO producto1"></span><h4>MINIDATÁFONO</h4></a></li>
                     <li style="visibility: visible;"><a data-id="producto2" href="https://codigoqr.com.co/" target="_blank"><span class="iconSM-CODIGO_QR producto2"></span><h4>CÓDIGO QR</h4></a></li>
-                    <li style="visibility: visible;"><a data-id="producto5" href="#producto5" aria-expanded="false" data-toggle="collapse"><span class="iconSM-DINERO_ELECTRONICO producto5"></span><h4>DINERO ELECTRÓNICO</h4></a></li>
+                    <li style="visibility: visible;"><a data-id="producto5" href="#producto5" aria-expanded="false" data-toggle="collapse" id="link5"><span class="iconSM-DINERO_ELECTRONICO producto5"></span><h4>DINERO ELECTRÓNICO</h4></a></li>
                 </ul>
             </div>
         </div>
@@ -99,7 +99,7 @@
         <!-- SECCION 3 -->
         
         <div class="sc-seccionProducto boxCaracteristicasSM" style="background-image: url('moviles/imagen-3.png');background-size: contain;    background-position: right center;background-repeat: no-repeat;">
-        <div class="container">
+        <div class="container py-5">
         
          <div class="col-sm-7">   
             <div class="col-xs-offset-3 col-sm-offset-3">
@@ -110,16 +110,15 @@
                 <div class="descripcionPorcesamientos">
                     <ul class="point_naranja boxBeneficiosSM">
                     <h2 class="naranja" style="margin-left: -4.4%;margin-bottom:2%;">Beneficios</h2>
-        <li> Incrementa ventas y número de clientes.  </li>
-        <li> Más seguridad para el comercio y sus clientes al reducir el manejo de dinero en efectivo.  </li>
-        <li> Ahorra tiempo y dinero al evitar desplazamientos.  </li>
-        <li> Permite cerrar ventas “en caliente”.  </li>
-        <li> Permite vender en cualquier momento y lugar.  </li>
-        <li> Disminuye la cartera.  </li>
-        <li> Aporta status a los negocios.  </li>
-        <li> Control de las ventas al consultar informes detallados.  </li>
-        
-        
+                    <li> Incrementa ventas y número de clientes.  </li>
+                    <li> Más seguridad para el comercio y sus clientes al reducir el manejo de dinero en efectivo.  </li>
+                    <li> Ahorra tiempo y dinero al evitar desplazamientos.  </li>
+                    <li> Permite cerrar ventas “en caliente”.  </li>
+                    <li> Permite vender en cualquier momento y lugar.  </li>
+                    <li> Disminuye la cartera.  </li>
+                    <li> Aporta status a los negocios.  </li>
+                    <li> Control de las ventas al consultar informes detallados.  </li>
+            
                     </ul>
                 </div>
             </div>
@@ -270,5 +269,13 @@
     <script src="js/jquery-3.2.1.min.js"></script>  
     <script src="js/bootstrap.min.js" ></script>
     <script src="js/main.js"></script>
+    <script>        
+        $( "#link1" ).click(function() {            
+            $("#producto5").removeClass('show');            
+        });
+        $( "#link5" ).click(function() {            
+            $("#producto1").removeClass('show');            
+        });
+    </script>
   </body>
 </html>

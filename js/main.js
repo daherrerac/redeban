@@ -133,6 +133,9 @@ $(document).ready(function () {
     $('#modalProductos').modal('show');
 });
 
+
+
+
 //Test
 
 // var meta = document.createElement('meta');

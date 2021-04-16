@@ -38,12 +38,12 @@
             <span id="adelanteProcesamiento" class="glyphicon glyphicon-menu-right" style="display: none;"></span>
              
             <div class="slider-solucionesProcesamiento productos">
-                <ul id="slider-solucionesProcesamiento" style="width: 800px; margin: 0px auto;">
+                <ul id="slider-solucionesProcesamiento" class="entidades" >
                     
-                    <li style="visibility: visible;"><a data-id="producto1" data-toggle="collapse" href="#producto1"><span class="icoSP-PROCESAMIENTO-DE-FRANQUICIAS producto1"></span><h4>PROCESAMIENTO DE TARJETAS DE FRANQUICIA</h4></a></li>
-                    <li style="visibility: visible;"><a data-id="producto2" data-toggle="collapse" href="#producto2"><span class="icoSP-TARJETA-SIN-CONTACTO producto2"></span><h4>PAGOS SIN CONTACTO</h4></a></li> 
-                    <li style="visibility: visible;"><a data-id="producto3" data-toggle="collapse" href="#producto3"><span class="icoSP-TARJETA-PRIVADA producto3"></span><h4>TARJETAS PRIVADAS</h4></a></li>
-                    <li style="visibility: visible;"><a data-id="producto4" data-toggle="collapse" href="#producto4"><span class="icoSP-TARJETA-PREPAGO producto4"></span><h4>TARJETA PREPAGO</h4></a></li>
+                    <li style="visibility: visible;"><a data-id="producto1" data-toggle="collapse" href="#producto1" id="link1"><span class="icoSP-PROCESAMIENTO-DE-FRANQUICIAS producto1"></span><h4>PROCESAMIENTO DE TARJETAS DE FRANQUICIA</h4></a></li>
+                    <li style="visibility: visible;"><a data-id="producto2" data-toggle="collapse" href="#producto2" id="link2"><span class="icoSP-TARJETA-SIN-CONTACTO producto2"></span><h4>PAGOS SIN CONTACTO</h4></a></li> 
+                    <li style="visibility: visible;"><a data-id="producto3" data-toggle="collapse" href="#producto3" id="link3"><span class="icoSP-TARJETA-PRIVADA producto3"></span><h4>TARJETAS PRIVADAS</h4></a></li>
+                    <li style="visibility: visible;"><a data-id="producto4" data-toggle="collapse" href="#producto4" id="link4"><span class="icoSP-TARJETA-PREPAGO producto4"></span><h4>TARJETA PREPAGO</h4></a></li>
                     
                 </ul>
            </div>
@@ -81,7 +81,7 @@
                 <span id="adelanteSP_bono" class="verde glyphicon glyphicon-menu-right" style="display: none;"></span>
                 
                 <div class="slider-solucion_procesamiento_bono">
-                <ul id="slider-solucion_procesamiento_bono" style="width: 750px; margin: 0px auto;"> 
+                <ul id="slider-solucion_procesamiento_bono" style="margin: 0px auto;"> 
                     <li>
                         <a>
                             <img class="img-responsive" src="soluciones/carac-1Entidades.png" alt="caracteristicas" style="width: 40%;">
@@ -174,7 +174,7 @@
                 <span id="atrasSP_bono" class="verde glyphicon glyphicon-menu-left" style="display: none;"></span>
                 <span id="adelanteSP_bono" class="verde glyphicon glyphicon-menu-right" style="display: none;"></span>                         
                 <div class="slider-solucion_procesamiento_bono">
-                    <ul id="slider-solucion_procesamiento_bono" style="width: 750px; margin: 0px auto;">
+                    <ul id="slider-solucion_procesamiento_bono" style="margin: 0px auto;">
                         <li>
                             <a>                            
                             <img class="img-responsive" src="soluciones/carac-1.png" alt="caracteristicas" style="width: 40%;">
@@ -272,7 +272,7 @@
             <span id="adelanteSP_bono" class="verde glyphicon glyphicon-menu-right" style="display: none;"></span>
                      
             <div class="slider-solucion_procesamiento_bono">
-                <ul id="slider-solucion_procesamiento_bono" style="width: 750px; margin: 0px auto;">   
+                <ul id="slider-solucion_procesamiento_bono" style=" margin: 0px auto;">   
                     <li>
                         <a href="#">
                             <img class="img-responsive" src="procesamiento/carac-1.png" alt="caracteristicas 1" style="width: 40%;">
@@ -361,12 +361,10 @@
                     <img class="img-descripcion" src="soluciones/caracteristicas-r.png">
                     <div class="rojoSP"> Características </div>
                 </div>   
-                        
-                <span id="atrasSP_bono" class="verde glyphicon glyphicon-menu-left" style="display: inline;"></span>
-                <span id="adelanteSP_bono" class="verde glyphicon glyphicon-menu-right" style="display: inline;"></span>
+                                        
 
                 <div class="slider-solucion_procesamiento_bono">
-                    <ul id="slider-solucion_procesamiento_bono" style="width: 1250px; margin-left: 0px;">
+                    <ul id="slider-solucion_procesamiento_bono" style="margin: 0px auto;">
                         <li>
                             <a>
                                 <img class="img-responsive" src="soluciones/carac-1p.png" alt="caracteristicas" style="width: 40%;">
@@ -521,6 +519,28 @@
     <script src="js/jquery-3.2.1.min.js"></script>    
     <script src="js/bootstrap.min.js" ></script>
     <script src="js/main.js"></script>
+    <script>
+        $( "#link1" ).click(function() {            
+            $("#producto2").removeClass('show');  
+            $("#producto3").removeClass('show');  
+            $("#producto4").removeClass('show');            
+        });
+        $( "#link2" ).click(function() {            
+            $("#producto1").removeClass('show');  
+            $("#producto3").removeClass('show');  
+            $("#producto4").removeClass('show');            
+        });
+        $( "#link3" ).click(function() {            
+            $("#producto1").removeClass('show');  
+            $("#producto2").removeClass('show');  
+            $("#producto4").removeClass('show');            
+        });
+        $( "#link4" ).click(function() {            
+            $("#producto1").removeClass('show');  
+            $("#producto2").removeClass('show');  
+            $("#producto3").removeClass('show');            
+        });
+    </script>
     
   </body>
 </html>
