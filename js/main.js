@@ -138,16 +138,16 @@ $(document).ready(function () {
 
 //Test
 
-var meta = document.createElement('meta');
-meta.name  ='robots';
-meta.setAttribute('content', 'noindex');
-document.getElementsByTagName('head')[0].appendChild(meta);
+// var meta = document.createElement('meta');
+// meta.name  ='robots';
+// meta.setAttribute('content', 'noindex');
+// document.getElementsByTagName('head')[0].appendChild(meta);
 
 
 
 //Produccion
 
-/* var meta = document.createElement('meta');
+var meta = document.createElement('meta');
 var meta2 = document.createElement('meta');
 var meta3 = document.createElement('meta');
 var meta4 = document.createElement('meta');
@@ -208,4 +208,3 @@ var meta5 = document.createElement('meta');
 meta5.name  ='robots';
 meta5.setAttribute('content', 'index');
 document.getElementsByTagName('head')[0].appendChild(meta5);
- */
