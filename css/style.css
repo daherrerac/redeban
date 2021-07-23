@@ -761,6 +761,7 @@ h1.modal-title{
 }
 .modal-body,.modal-body img{
     margin:0 auto;
+    width: 100%;
 }
 #modalContacto.modal .modal-dialog{
     margin: 25% auto;
@@ -2130,6 +2131,21 @@ hr {
     margin: 0 auto;
 }
 /*popup informativo*/
+.modal-content{
+    border-radius: 1rem;
+}
+.modal-content h3{
+    font-family:'plantilla1';   
+    color: #001F6B;
+}
+.modal-footer{
+    width: 95%;
+    margin: auto;
+}
+.modal-footer button.btn{
+    background: #174d96;
+    color: #ffffff;
+}
 #modalProductos .modal-dialog {
 	max-width: 600px;    
     margin: 1.75rem auto;

@@ -1,13 +1,13 @@
 
 
 $(window).on('load', function() {
-    $(".loader").fadeOut(3000);    
+    $(".loader").fadeOut(2000);    
+    $('#modalCookies').modal('show');
 });
 $(document).ready(function () {
     $("#contactenos1").on( "click", function() {
         $("#Contact").toggle("slow"); //formulario de contacto
-    });
-
+    });    
     $(function() {
         $("#navigation").load("nav.html");
     });
