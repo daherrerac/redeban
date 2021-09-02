@@ -182,6 +182,9 @@ a {
 .nav-item.dropdown.show #navbarDropdown{
     color: #fff;
 }
+.navbar-expand-md .navbar-nav .dropdown-menu {    
+    width: max-content;
+}
 .dropdown-menu {
     margin: 0 0 0 -154px;
     border: none;
@@ -501,6 +504,7 @@ h1.mas-grande{
 .seguridad-bg{
     background: url(../seguridad/IMAGEN-SEGURIDAD.jpg);
     background-size: contain;
+    background-repeat: no-repeat;
 }
 .titulo-subseccion{
     font-size: 32px;        
@@ -772,6 +776,27 @@ h1.modal-title{
 #modalContacto.modal .modal-body p{	
     text-align: center;
     font-size: 1.2em;
+}
+#modalPuntos .modal-header{
+    border: none;
+    padding: 0;
+    position: relative;
+}
+#modalPuntos .modal-header a{
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: 10;
+}
+#modalPuntos .modal-content {    
+    border: none;
+}
+#modalPuntos .modal-footer {    
+    padding: 0.5rem;
+    border: none;
+}
+#modalPuntos .btn-azul{
+    margin: 10px auto;
 }
 .sliderReconocimientos {
     padding-top: 10px;
@@ -2458,6 +2483,9 @@ hr {
     }
     .btn-azul{
         width: 50%;
+    }
+    #modalPuntos .btn-azul{
+        width: 90%;
     }
     .sc-caracteristicas {        
         float: none;    
