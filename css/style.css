@@ -2065,7 +2065,47 @@ hr {
 .pointComercios{
     font-size: 17px;
 }
+.descarga{
+    display: block;
+    margin: 2em auto;
+    max-width: 70%;
+    padding: 1em 2em;
+    border: 1px solid #777;
+    text-align: center;
+    border-radius: 8px;
+    color: #184E98;    
+}
+.descarga:hover{
+    cursor: pointer;
+    text-decoration: none;
+}
+.descarga img{
+    margin-right: 5px;
+}
+.modal-body iframe{
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+}
+.modal-lg .modal-content{
+    background: transparent;
+    border: none;
+}
+.modal-lg .modal-header{
+    border: none;
+}
 /*Footer*/
+.naranja{
+    width: 100%;
+    display: block;
+    background-color: #e75e21;
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+}
+.naranja p{    
+    margin-bottom: 0;
+}
 .row:before {
     display: table;
     content: " ";
