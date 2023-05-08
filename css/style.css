@@ -205,6 +205,9 @@ a {
     text-align: left;
     padding-left: 10px;
 }
+.dropdown-item:hover .second-level{
+    color: #ffffff !important;
+}
 span.dropdown-item{
     padding-left: 13px;
 }
@@ -213,8 +216,7 @@ span.dropdown-item{
 }
 
 .dropdown-item:hover span{
-    display: inline;
-    color: #9de000;
+    display: inline;    
 }
 .dropdown-item:hover a{    
     color: #fff;
@@ -276,6 +278,7 @@ span.dropdown-item{
 }
 .second-level{
     display: none;    
+    color: #ffffff;
 }
 .second-level ul{
     list-style: none;
@@ -290,10 +293,20 @@ span.dropdown-item{
 .second-level ul li:hover{
     color:#9de000;
 }
-#app1,#app2,#app3,#app4{
-    position: relative;
+.sub-2{
+    color: #ffffff;
 }
-#app1:hover > .second-level,#app2:hover > .second-level,#app3:hover > .second-level,#app4:hover > .second-level{
+.sub-2:hover{
+    color: #9de000;
+}
+#app1,#app2,#app3,#app3b,#app4,#app5,#app6,#app7{
+    position: relative;
+    font-size: 1.05em;
+}
+#app1:hover > .second-level,
+#app2:hover > .second-level,
+#app3:hover > .second-level,
+#app4:hover > .second-level{
     display: block;
     width: 235px;
     position: absolute;
@@ -304,6 +317,34 @@ span.dropdown-item{
     padding: 5px 10px;
     text-align: left;
 } 
+#app3b:hover > .second-level{
+    display: block;
+    width: 220px;
+    position: absolute;
+    background: rgba(23, 78, 150, 0.8);
+    color: #fff;
+    left: 268px;
+    top:0px;
+    padding: 5px 0px;
+    text-align: left;
+} 
+#app7:hover > .second-level {
+    display: block;
+    width: 235px;
+    position: absolute;
+    background: rgba(23, 78, 150, 0.8);
+    color: #fff;
+    left: 125px;
+    top: 0px;
+    padding: 5px 10px;
+    text-align: left;
+}
+.dropdown-item#app7{
+    width: 125px;
+    padding: 0;
+    display: block;    
+    margin-left: 10px;
+}
 
 /* Slider principal*/
 #carouselHome,#carouselHomeMini{
@@ -2068,8 +2109,8 @@ hr {
 .descarga{
     display: block;
     margin: 2em auto;
-    max-width: 70%;
-    padding: 1em 2em;
+    max-width: 90%;
+    padding: 1em;
     border: 1px solid #777;
     text-align: center;
     border-radius: 8px;
@@ -2095,6 +2136,14 @@ hr {
     border: none;
 }
 /*Footer*/
+.whatss{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+.whatss img{
+    max-width: 72px;
+}
 .naranja{
     width: 100%;
     display: block;
@@ -2102,6 +2151,10 @@ hr {
     margin: 0;
     padding: 1em 0;
     text-align: center;
+}
+h4.naranja,
+span.naranja {
+    background-color: transparent;
 }
 .naranja p{    
     margin-bottom: 0;
@@ -2230,6 +2283,19 @@ hr {
 }
 #modalProductos .modal-body{
     height: 600px;    
+}
+picture{
+    display: block;    
+    width: 100%;
+    background: rgb(185,185,185);
+    background: -moz-linear-gradient(90deg, rgba(185,185,185,1) 22%, rgba(204,204,204,1) 73%);
+    background: -webkit-linear-gradient(90deg, rgba(185,185,185,1) 22%, rgba(204,204,204,1) 73%);
+    background: linear-gradient(90deg, rgba(185,185,185,1) 22%, rgba(204,204,204,1) 73%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b9b9b9",endColorstr="#cccccc",GradientType=1); 
+}
+picture img{
+    margin: 0 auto;
+    display: block;
 }
 /* Media Query*/
 @media(min-width:1600px){
@@ -2532,6 +2598,13 @@ hr {
     }
     .slider-solucion_procesamiento_bono ul li {        
         height: auto;        
+    }
+    #app3b:hover > .second-level {
+        left: 235px;
+    }
+    #app7:hover > .second-level {
+        left: -99px;
+        top: 25px;
     }
 }
 @media (max-width:600px){
@@ -2859,6 +2932,43 @@ header.datamas{
     }
     
 }
+.cookie-disclaimer {
+    background: #174d96;
+    color: #FFF;
+    opacity: 1;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    height: 230px;
+    position: fixed;
+}
+.cookie-disclaimer a{
+    color: #fff;
+    text-decoration: underline;
+}
+  .cookie-disclaimer .container {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .cookie-disclaimer .cookie-close{
+    float: right;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .cookie-disclaimer .btn{
+    background-color: #ccc;
+    border:1px solid #001F6B;
+    font-size: 1.1em;
+  }
+  .cookie-disclaimer .btn:hover{
+    background-color: #fff;
+    color: #174d96;
+    border:1px solid #001F6B;
+  }
 @media(max-width:768px){
     
     .datamas .col-4 p {
@@ -2874,4 +2984,9 @@ header.datamas{
         width: 80%;
         margin:0 5%;
     }
+    .cookie-disclaimer {        
+        height: 360px;        
+    }
 }
+
+
